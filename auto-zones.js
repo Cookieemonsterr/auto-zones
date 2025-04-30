@@ -897,8 +897,375 @@
     "Al Hudariyat Island": [
     "22433", "22432", "22430", "22546", "22571", "23786"
     ],
+    "4th Circle": [
+    "Swilih", "Jubaiha", "Tabarbour", "Jabel Jufeh", "Marj Hamam", "Um Qaseer"
+    ],
+    "5th Circle": [
+    "Swilih", "Jubaiha", "Tabarbour", "Jabel Jufeh", "Marj Hamam", "Um Qaseer"
+    ],
+    "6th Circle": [
+    "Swilih", "Jubaiha", "Tabarbour", "Jabel Jufeh", "Marj Hamam", 
+    "Um Qaseer", "Jabel Jufeh", "Jabel Al Nasr", "Jabel Amman", "Fuheis"
+    ],
+    "7th Circle": [
+    "Swilih", "Jubaiha", "Urdon street", "Jabel Jufeh", "Marj Hamam", 
+    "Um Qaseer", "Jabel Jufeh", "Jabel Al Nasr", "Jabel Amman", "Fuheis"
+    ],
+    "8th Circle": [
+    "Swilih", "Jubaiha", "Abdali", "Um Qaseer", "Petra university", 
+    "Marj Hamam", "Mahis", "Fuheis"
+    ],
+    "Abdoun": [
+    "Jubaiha", "Abdali", "Boulevard", "Marj Hamam", "Fuheis", "Mahis"
+    ],
+    "Abdullah Ghosheh Street": [
+    "Urdon street", "Jabel Amman", "Fuheis", "Mahis", "Marj Hamam", "Jurn", "Qutnah"
+    ],
+    "Abo Al soos": [
+    "Abu Nusair", "Urdon street", "Shafa Badran", "Sport City", "Dahiat Al Amir Rasheed", 
+    "Al Tabasheer", "Al Rabieh", "KHBP"
+    ],
+    "Abu Alanda": [
+    "Abdali", "Gardenz", "Shmisani", "Marj Hamam", "Petra university", "Al Hashmi", "Qutnah"
+    ],
+    "Abu Nsair": [
+    "Khalda", "Tlaa Ali", "Um Sumaq", "City mall", "Tabarbour", "Al Rabieh"
+    ],
+    "Airport Road": [
+    "Kursi", "Wadi Seer", "7th Circle", "Dahiat Al Amir Rasheed", "Al Rabieh", 
+    "Abdali", "Boulevard", "Shmisani", "Um Qaseer", "Al Rabieh"
+    ],
+    "Abdali": [
+    "Khalda", "Jubaiha", "Urdon street", "Tabarbour", "Um Qaseer", 
+    "Kursi", "Wadi Seer", "Dabouq", "Bayader Sinaa"
+    ],
+    "Al Akhdar": [
+    "Khalda", "Tabarbour", "Jordan University", "Jordan University", "Dahiat Al Rasheed"
+    ],
+    "Al Ashrafyeh": [
+    "Khalda", "Tlaa Ali", "Um Sumaq", "Dahiat Al Rasheed", "Al Tabasheer"
+    ],
+    "Al Bayader": [
+    "Jubaiha", "Swilih", "Abdali", "Sport City", "Fuheis", "Mahis", "Al Hummar"
+    ],
+    "Al Bnayat": [
+    "Abdali", "Boulevard", "Shmisani", "Swifieh", "Sweifieh Village KML", "Um Uthaina"
+    ],
+    "Al Bunayyat": [
+    "Wadi Seer", "Kursi", "Abdali"
+    ],
+    "Al Fuhays": [
+    "Jubaiha", "Tlaa Ali", "Khalda", "Wadi Seer", "Al Rabieh", "8th Circle", "7th Circle"
+    ],
+    "Al Hashmi Al Shamali": [
+    "Al Rabieh", "Jubaiha", "Tlaa Ali", "Um Qaseer"
+    ],
+    "Al Jandawil": [
+    "Fuheis", "Mahis", "Al Hummar", "Swilih", "Jubaiha", "Abdali", "Boulevard", "Sport City"
+    ],
+    "Al Madina Al Monawwara": [
+    "Jabel Husain", "Jabel Nuzha", "Jabel Al Nasr", "Jabel Jufeh", "Shafa Badran",
+    "Urdon street", "Abu Nusair", "Fuheis", "Dair Ghoubar"
+    ],
+    "Al Manarah": [
+    "Shmisani", "Gardenz", "Al Rabieh", "Tabarbour", "Um Qaseer"
+    ],
+    "Al Quwaysimah": [
+    "Tabarbour", "Al Rabieh", "Sahab", "Petra university", "Marj Hamam"
+    ],
+    "Al Rahmanyeh": [
+    "Tabarbour", "Shmisani", "Um Uthaina", "Gardenz", "Sahab"
+    ],
+    "Al Rawabi": [
+    "Urdon street", "Jubaiha", "Abdali", "Boulevard", "Abdali Hospital",
+    "Jabel Amman", "Marj Hamam"
+    ],
+    "Al Rawnaq": [
+    "Swilih", "Jubaiha", "Jabel Husain", "Jabel Nuzha", "Jabel Al Nasr",
+    "Jabel Jufeh", "Tabarbour", "Naour"
+    ],
+    "Al Sahel": [
+    "Swilih", "Jubaiha", "Abdali", "Abdali Hospital", "Boulevard",
+    "Marj Hamam", "Tabarbour"
+    ],
+    "Al Salam": [
+    "Abu Nusair", "Shafa Badran", "Tabarbour", "Um Qaseer", "Marj Hamam",
+    "Swilih", "Alahleyah University"
+    ],
+    "Al Tla'a Al Shamali": [
+    "Abu Nusair", "Shafa Badran", "Tabarbour", "Al Hashmi", "Jurn"
+    ],
+    "Al Wibdeh": [
+    "Jubaiha", "Khalda", "Jandweel", "Kursi", "Marqa"
+    ],
+    "Al Yasmeen": [
+    "Al Rabieh", "Jabel Nuzha", "Hay Nazal", "Dahiat Al Yasmeen", "Naour"
+    ],
+    "Basman": [
+    "Swilih", "Khalda", "Swifieh", "Sweifieh Village KML", "Tlaa Ali",
+    "Um Sumaq", "Jandweel", "Bayader Sinaa"
+    ],
+    "Dabouq": [
+    "Shmisani", "Abdali Hospital", "Boulevard", "Abdali", "Abdoun",
+    "Taj Mall KML", "Mahis"
+    ],
+    "Dahiet Al Ameer Rashed": [
+    "Fuheis", "Mahis", "Jubaiha", "Abdali", "Abdali Hospital", "Boulevard",
+    "Marj Hamam", "Um Qaseer"
+    ],
+    "Dahiet Al Yasamine": [
+    "Jandweel", "Kursi", "Tlaa Ali", "Um Sumaq", "Gardenz",
+    "Jabel Al Nasr", "Naour"
+    ],
+    "Dahiet Al-Rasheed": [
+    "Tabarbour", "Al Hashmi", "Abdali", "Abdali Hospital", "Boulevard",
+    "Abdoun", "Kursi", "Bayader Sinaa"
+    ],
+    "Dahyet Al Ameer Hussain": [
+    "Shafa Badran", "Abu Nusair", "Swifieh", "Khalda", "Jandweel",
+    "Kursi", "Dair Ghoubar"
+    ],
+    "Dahyet Al Hussein": [
+    "Jubaiha", "Khalda", "Tabarbour", "Al Hashmi", "Qutnah"
+    ],
+    "Dakhliya Circle": [
+    "Shafa Badran", "Urdon street", "Um Qaseer", "Kursi", "Wadi Seer",
+    "Bayader Sinaa", "Swifieh"
+    ],
+    "Dawood Complex": [
+    "Fuheis", "Mahis", "Jubaiha", "Abdali", "Abdali Hospital",
+    "Boulevard", "Marj Hamam"
+    ],
+    "Deir Ghbar": [
+    "Dabouq", "Khalda", "Dahiat Al Rasheed", "Jubaiha", "Jabel Nuzha", "Naour"
+    ],
+    "Downtown Amman": [
+    "Dahiat Al Rasheed", "Tlaa Ali", "Wadi Seer" 
+    ],
+    "Ein Al-Basha": [
+    "Urdon street", "Tlaa Ali", "Fuheis"
+    ],
+    "Gardens": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Bayader Sinaa",
+    "Bunayat", "Dahiat Al Yasmeen"
+    ],
+    "Hay Nazal": [
+    "Al Rabieh", "Tlaa Ali", "Dahiat Al Amir Rasheed", "Bunayat", "Airport Road"
+    ],
+    "Horya": [
+    "Marj Hamam", "Abdoun", "Jabel Jufeh", "Jabel Amman"
+    ],
+    "Istiqlal Street": [
+    "Tlaa Ali", "Dahiat Al Yasmeen", "Bunayat", "Swifieh", "Sweifieh Village KML",
+    "Al Tabasheer", "Dahiat Al Amir Rasheed"
+    ],
+    "Jabal Al Hussein": [
+    "Sahab", "Bunayat", "Um Qaseer", "Abdoun", "Al Rabieh", "Dahiat Al Rasheed"
+    ],
+    "Jabal Al Nasser": [
+    "Sahab", "Bunayat", "Um Qaseer", "Abdoun", "Al Rabieh", "Dahiat Al Rasheed"
+    ],
+    "Jabal Al Nuzha": [
+    "Sahab", "Bunayat", "Um Qaseer", "Abdoun", "Al Rabieh", "Dahiat Al Rasheed"
+    ],
+    "Jabal Al Taj": [
+    "Sahab", "Bunayat", "Um Qaseer", "Abdoun", "Al Rabieh", "Dahiat Al Rasheed"
+    ],
+    "Jabal Amman": [
+    "Dahiat Al Rasheed", "Tlaa Ali", "Jandweel", "Wadi Seer", "Tabarbour",
+    "Marqa", "Sahab", "Um Sumaq"
+    ],
+    "Jabal Weibdeh": [
+    "Dahiat Al Rasheed", "Tlaa Ali", "Jandweel", "Wadi Seer", "Tabarbour",
+    "Marqa", "Sahab", "Um Sumaq"
+    ],
+    "Jandaweel": [
+    "Fuheis", "Mahis", "Swifieh", "Jubaiha", "Dahiat Al Rasheed",
+    "Abdali Hospital", "Abdali", "Boulevard", "Hay Nazal"
+    ],
+    "Jubaiha": [
+    "Tabarbour", "Abdali", "Abdali Hospital", "Boulevard", "Shmisani",
+    "Al Tabasheer", "Jandweel", "Kursi", "Dahiat Al Amir Rasheed"
+    ],
+    "Khalda": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Hay Nazal",
+    "Fuheis", "Mahis", "Boulevard", "Qutnah"
+    ],
+    "Dabouq District": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Hay Nazal",
+    "Fuheis", "Mahis", "Boulevard", "Qutnah"
+    ],
+    "Khrabet Al Souq": [
+    "Marj Hamam", "Abdoun", "Jabel Amman", "Naour", "Abdali"
+    ],
+    "Marj Al Hamam": [
+    "Um Qaseer", "Hay Nazal", "Abdoun", "Jandweel", "Kursi", "Um Uthaina"
+    ],
+    "Mecca Street": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Hay Nazal",
+    "Fuheis", "Mahis", "Boulevard", "Qutnah"
+    ],
+    "Muqablain": [
+    "Swifieh", "Wadi Seer", "Abdali", "Al Hashmi", "Airport Road",
+    "Naour", "Petra university", "Um Qaseer"
+    ],
+    "Muqablain 2": [
+    "Swifieh", "Wadi Seer", "Abdali", "Al Hashmi", "Airport Road",
+    "Naour", "Petra university", "Um Qaseer"
+    ],
+    "Na'our": [
+    "Dahiat Al Yasmeen", "Hay Nazal", "Um Qaseer", "Dair Ghoubar", "Bayader Sinaa"
+    ],
+    "Queen Rania Street": [
+    "Tabarbour", "Abdali", "Abdali Hospital", "Boulevard", "Shmisani",
+    "Al Tabasheer", "Jandweel", "Kursi", "Dahiat Al Amir Rasheed"
+    ],
+    "Rabieh": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Hay Nazal",
+    "Fuheis", "Mahis", "Boulevard", "Qutnah"
+    ],
+    "Ras Al Ain": [
+    "Dahiat Al Rasheed", "Tlaa Ali", "Tabarbour", "Al Hashmi", "Marj Hamam",
+    "Wadi Seer", "Jandweel", "Kursi"
+    ],
+    "Sahab": [
+    "Um Qaseer", "Bunayat", "Al Dra3"
+    ],
+    "Sahafa Tunnel": [
+    "Fuheis", "Mahis", "Jubaiha", "Abdali", "Abdali Hospital", "Boulevard",
+    "Marj Hamam", "Um Qaseer"
+    ],
+    "Shafa Badran": [
+    "Khalda", "Tlaa Ali", "Um Sumaq", "City mall", "Tabarbour",
+    "Al Rabieh", "Qutnah", "Sport City"
+    ],
+    "Shmeisani": [
+    "Bunayat", "Dahiat Al Yasmeen", "Um Qaseer", "Bayader Sinaa", "Swilih",
+    "Jubaiha", "Tabarbour", "Al Hashmi", "Marj Hamam"
+    ],
+    "Shmeisani 2": [
+    "Bunayat", "Dahiat Al Yasmeen", "Um Qaseer", "Bayader Sinaa", "Swilih",
+    "Jubaiha", "Tabarbour", "Al Hashmi", "Marj Hamam"
+    ],
+    "Sports City": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Jabel Al Nasr",
+    "East Amman", "Dahiat Al Yasmeen", "Kursi", "Bayader Sinaa", "Dabouq"
+    ],
+    "Sweifeh": [
+    "Jubaiha", "Swilih", "Qutnah", "Jurn", "Sport City", "Al Hashmi",
+    "Petra university", "Um Qaseer", "Marj Hamam"
+    ],
+    "Sweifieh": [
+    "Jubaiha", "Swilih", "Qutnah", "Jurn", "Sport City", "Al Hashmi",
+    "Petra university", "Um Qaseer", "Marj Hamam"
+    ],
+    "Swifieh Village": [
+    "Jubaiha", "Swilih", "Qutnah", "Jurn", "Sport City", "Al Hashmi",
+    "Petra university", "Um Qaseer", "Marj Hamam"
+    ],
+    "Sweileh": [
+    "Fuheis", "Mahis", "Abu Nusair", "Shafa Badran", "Urdon street",
+    "Shmisani", "Swifieh", "Sweifieh Village KML", "Bayader Sinaa", "Al Qawnaq"
+    ],
+    "Tabrbour": [
+    "Shafa Badran", "Abu Nusair", "Jubaiha", "Tlaa Ali", "Um Sumaq",
+    "Al Rabieh", "Abdoun", "Hay Nazal", "Al Dra3"
+    ],
+    "Tila Al Ali": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Hay Nazal",
+    "Fuheis", "Mahis", "Boulevard", "Qutnah"
+    ],
+    "Um Al Summaq": [
+    "Shafa Badran", "Abu Nusair", "Tabarbour", "Al Hashmi", "Hay Nazal",
+    "Fuheis", "Mahis", "Boulevard", "Qutnah"
+    ],
+    "Um Uthaina": [
+    "Swilih", "Jubaiha", "Al Hashmi", "Tabarbour", "Jabel Al Nasr",
+    "Um Qaseer", "Dabouq"
+    ],
+    "University Street": [
+    "Fuheis", "Mahis", "Jubaiha", "Abdali", "Abdali Hospital",
+    "Boulevard", "Marj Hamam", "Um Qaseer"
+    ],
+    "Wadi Saqra": [
+    "Jubaiha", "Khalda", "Jandweel", "Kursi", "Marqa"
+    ],
+    "Wahdat": [
+    "Dahiat Al Rasheed", "Tlaa Ali", "Tabarbour", "Al Hashmi",
+    "Marj Hamam", "Wadi Seer", "Jandweel", "Kursi"
+    ],
+    "Yadoodah": [
+    "Marj Hamam", "Naour", "Hay Nazal", "Dahiat Al Yasmeen"
+    ],
+    "Yajouz": [
+    "Tabarbour", "Abdali", "Abdali Hospital", "Boulevard", "Shmisani",
+    "Al Tabasheer", "Jandweel", "Kursi", "Dahiat Al Amir Rasheed"
+    ],
+    "Zuhoor": [
+    "Wadi Seer", "Al Rabieh", "Al Qawnaq", "Sport City", "Al Qawnaq"
+    ],
+    "Al Khaleej": [
+    "22876", "22871", "22875", "22870"
+    ],
+    "An Nahdah": [
+    "22876", "22871", "22875", "22870"
+    ],
+    "Al Malaz": [
+    "22858", "22863", "22859", "22864", "22867"
+    ],
+    "Al Aqeeq": [
+    "22858", "22863", "22859", "22864", "22867"
+    ],
+    "Al Malqa": [
+    "22858", "22863", "22859", "22864", "22867"
+    ],
+    "Hittin": [
+    "22858", "22863", "22859", "22864", "22867"
+    ],
+    "Al Aizdihar": [
+    "22869", "22868", "22870", "22874"
+    ],
+    "Al Izdihar": [
+    "22869", "22868", "22870", "22874"
+    ],
+    "Al Mughrizat": [
+    "22869", "22868", "22870", "22874"
+    ],
+    "Al Masif": [
+    "22868", "22867", "22869", "22874"
+    ],
+    "Al Mursalat": [
+    "22868", "22867", "22869", "22874"
+    ],
+    "Al Tawan": [
+    "22868", "22867", "22869", "22874"
+    ],
+    "An Nuzhah": [
+    "22868", "22867", "22869", "22874"
+    ],
+    "At Taawun": [
+    "22868", "22867", "22869", "22874"
+    ],
+    "Al Mohammadiyah": [
+    "22867", "22864", "22868"
+    ],
+    "Al Muruj": [
+    "22867", "22864", "22868"
+    ],
+    "King Fahd": [
+    "22867", "22864", "22868"
+    ],
+    "Zaytoun Mountain": [
+    "22867", "22864", "22868"
+    ],
+    "Al Falah": [
+    "22860", "22859", "22880", "22861", "22868", "22869", "22870"
+    ],
+    "Al Nada": [
+    "22860", "22859", "22880", "22861", "22868", "22869", "22870"
+    ],
 
-  };
+   };
 
   function setNativeValue(element, value) {
     const lastValue = element.value;
