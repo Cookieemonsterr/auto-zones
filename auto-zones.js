@@ -1487,7 +1487,7 @@
       const newValue = input.value + char;
       setNativeValue(input, newValue);
       input.dispatchEvent(new Event('input', { bubbles: true }));
-      await new Promise(r => setTimeout(r, 70)); // Typing speed
+      await new Promise(r => setTimeout(r, 60)); // Typing speed
     }
   }
 
@@ -1512,7 +1512,7 @@
 
     await humanTypeProperly(input, zoneCode);
 
-    await new Promise(r => setTimeout(r, 1000)); // Wait for dropdown options
+    await new Promise(r => setTimeout(r, 900)); // Wait for dropdown options
 
     const options = Array.from(document.querySelectorAll('.ant-select-item-option-content'));
     const option = options.find(opt => opt.textContent.includes(zoneCode));
@@ -1529,7 +1529,7 @@
   async function runSelection(zoneCodes) {
     for (let code of zoneCodes) {
       await selectZone(code);
-      await new Promise(r => setTimeout(r, 700)); // Wait between selections
+      await new Promise(r => setTimeout(r, 600)); // Wait between selections
     }
     console.log('🎯 Done selecting all zonals!');
   }
