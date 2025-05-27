@@ -1507,8 +1507,13 @@
 
   const expectedZoneCodes = zoneMap[zoneName];
 
-  const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item[title]');
-  const selectedCodes = Array.from(selectedZoneTags).map(el => el.getAttribute("title").trim());
+  const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item-content');
+const selectedCodes = Array.from(selectedZoneTags)
+  .map(el => {
+    const match = el.textContent.match(/\((\d+)\)/);
+    return match ? match[1] : null;
+  })
+  .filter(Boolean);
 
   const missing = expectedZoneCodes.filter(code => !selectedCodes.includes(code));
 
