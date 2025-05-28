@@ -1530,6 +1530,4 @@ if (missing.length === 0) {
   console.log(`❌ Missing: ${missing.join(', ')}`);
 }
 
-}
-
 })();
