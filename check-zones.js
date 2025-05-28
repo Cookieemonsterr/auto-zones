@@ -1498,22 +1498,22 @@
     }
   }
 
-  // ⭐ MAIN START POINT
+ // ⭐ MAIN START POINT
 
-  const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
-  const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
-  const zoneName = zoneElement?.getAttribute("title")?.trim();
+const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
+const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
+const zoneName = zoneElement?.getAttribute("title")?.trim();
 
-  console.log("👉 Selected Zone:", zoneName);
+console.log("👉 Selected Zone:", zoneName);
 
-  if (!zoneName || !zoneMap[zoneName]) {
-    console.warn("⚠️ Zone not found in map or not selected yet.");
-    return;
-  }
+if (!zoneName || !zoneMap[zoneName]) {
+  console.warn("⚠️ Zone not found in map or not selected yet.");
+  return;
+}
 
-  const expectedZoneCodes = zoneMap[zoneName];
+const expectedZoneCodes = zoneMap[zoneName];
 
-  const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item-content');
+const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item-content');
 const selectedCodes = Array.from(selectedZoneTags)
   .map(el => {
     const match = el.textContent.match(/\((\d+)\)/);
@@ -1521,13 +1521,11 @@ const selectedCodes = Array.from(selectedZoneTags)
   })
   .filter(Boolean);
 
-  const missing = expectedZoneCodes.filter(code => !selectedCodes.includes(code));
+const missing = expectedZoneCodes.filter(code => !selectedCodes.includes(code));
 
 if (missing.length === 0) {
-  prompt(`✅ All zones for "${zoneName}" are selected!`);
+  prompt(`✅ All zones for "${zoneName}" are selected!`, expectedZoneCodes.join(', '));
 } else {
   prompt(`⚠️ Missing zones for "${zoneName}":\n\n(Copy below)`, missing.join(', '));
   console.log(`❌ Missing: ${missing.join(', ')}`);
-
-
 }
