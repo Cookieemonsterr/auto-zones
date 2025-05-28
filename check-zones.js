@@ -1524,7 +1524,7 @@ const selectedCodes = Array.from(selectedZoneTags)
   const missing = expectedZoneCodes.filter(code => !selectedCodes.includes(code));
 
 if (missing.length === 0) {
-  prompt(`✅ All zones for "${zoneName}" are selected!\n\n(Copy below if needed)`, expectedZoneCodes.join(', '));
+  alert(`✅ All zones for "${zoneName}" are selected!`);
 } else {
   prompt(`⚠️ Missing zones for "${zoneName}":\n\n(Copy below)`, missing.join(', '));
   console.log(`❌ Missing: ${missing.join(', ')}`);
