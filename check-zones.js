@@ -1502,58 +1502,193 @@
     "21487", "21444", "21595", "21423", "21443", "21583", "21593", "21481",
     "21592", "21422", "21424", "21421", "22825", "22824", "21482", "22852"
     ],
-
+    "Al Foaa": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108"
+    ], 
+    "Hili": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24105"
+    ],
+    "Al Masoudi": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114"
+    ],
+    "Al Qattara": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al Mraijeb": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ], 
+    "Al Jimi": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al Amerya": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al Mutarid": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "City Center": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Towayya": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al khabisi": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24094",
+    "24091", "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al Sarooj": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24105",
+    "24109", "24116", "24114", "24113"
+    ],
+    "Industrial Area": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Falaj Hazza": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al Ain Zoo": [
+    "24110", "24099", "24102", "24100", "24096", "24093", "24101", "24107",
+    "24104", "24111", "24115", "24097", "24108", "24092", "24091", "24103",
+    "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Al Amra": [
+    "24094", "24091", "24103", "24106", "24105", "24098", "24109", "24116"
+    ],
+    "Airport": [
+    "24100", "24096", "24093", "24101", "24115", "24097", "24108", "24094",
+    "24091", "24103", "24106", "24105", "24098", "24109", "24116"
+    ],
+    "Al Salamat": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Bateen": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Asharij": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24094",
+    "24091", "24103", "24106", "24105", "24098", "24109", "24116", "24114",
+    "24113"
+    ],
+    "Al Maqam": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Ghanima": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Zakher": [
+    "24102", "24100", "24096", "24093", "24101", "24107", "24104", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Shiab Al Ashkher": [
+    "24110", "24099", "24102", "24100", "24096", "24093", "24101", "24107",
+    "24104", "24111", "24115", "24097", "24108", "24092", "24091", "24103",
+    "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
+    "Nimah": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24104",
+    "24111", "24115", "24097", "24108", "24092", "24106", "24105", "24098",
+    "24109", "24116", "24114", "24113"
+    ],
+    "Mbazzra": [
+    "24101", "24107", "24104", "24111", "24097", "24108", "24092", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+    ],
    };
 
-  const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
+  function setNativeValue(element, value) {
+    const lastValue = element.value;
+    element.value = value;
+    const event = new Event("input", { bubbles: true });
+    event.simulated = true;
+    const tracker = element._valueTracker;
+    if (tracker) tracker.setValue(lastValue);
+    element.dispatchEvent(event);
+  }
+
+  async function humanTypeProperly(input, text) {
+    input.focus();
+    setNativeValue(input, '');
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    for (let char of text) {
+      const newValue = input.value + char;
+      setNativeValue(input, newValue);
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      await new Promise(r => setTimeout(r, 60));
+    }
+  }
+
+  async function openDropdownIfNeeded(input) {
+    const selectWrapper = input.closest('.ant-select');
+    if (selectWrapper) {
+      selectWrapper.click();
+      await new Promise(r => setTimeout(r, 500));
+    }
+  }
+
+  async function selectZone(zoneCode) {
+    console.log(`🔎 Searching for zone: ${zoneCode}`);
+    const input = document.querySelector('div.ant-select-selection-search input');
+    if (!input) return console.error('❌ Input not found!');
+    await openDropdownIfNeeded(input);
+    await humanTypeProperly(input, zoneCode);
+    await new Promise(r => setTimeout(r, 900));
+    const options = Array.from(document.querySelectorAll('.ant-select-item-option-content'));
+    const option = options.find(opt => opt.textContent.includes(zoneCode));
+    if (option) {
+      option.click();
+      console.log(`✅ Added: ${zoneCode}`);
+      await new Promise(r => setTimeout(r, 500));
+    } else {
+      console.error(`❌ Zone not found after typing: ${zoneCode}`);
+    }
+  }
+
+  async function runSelection(zoneCodes) {
+    for (let code of zoneCodes) {
+      await selectZone(code);
+      await new Promise(r => setTimeout(r, 600));
+    }
+    console.log('🎯 Done selecting all zonals!');
+  }
 
   const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
   const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
   const zoneName = zoneElement?.getAttribute("title")?.trim();
-
   console.log("👉 Selected Zone:", zoneName);
-  if (!zoneName || !zoneMap[zoneName]) {
-    alert("⚠️ Zone not found in JSON data or not selected!");
-    return;
-  }
-
-  const rawExpected = zoneMap[zoneName] || [];
-
-  const expectedNames = [];
-  const expectedCodes = [];
-
-  for (let val of rawExpected) {
-    if (typeof val === 'string' && /^\d{5}$/.test(val)) {
-      expectedCodes.push(val.trim());
-    } else {
-      expectedNames.push(normalize(val));
-    }
-  }
-
-  const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item-content');
-  const selectedNames = [];
-  const selectedCodes = [];
-
-  Array.from(selectedZoneTags).forEach(el => {
-    const full = el.textContent;
-
-    const codeMatch = full.match(/\((\d{5})\)/);
-    if (codeMatch) selectedCodes.push(codeMatch[1]);
-
-    const parts = full.split('-');
-    const namePart = parts[parts.length - 1].replace(/\(\d+\)/, '').trim();
-    if (namePart) selectedNames.push(normalize(namePart));
-  });
-
-  const missingNames = expectedNames.filter(n => !selectedNames.includes(n));
-  const missingCodes = expectedCodes.filter(c => !selectedCodes.includes(c));
-  const missing = [...missingNames, ...missingCodes].filter(Boolean);
-
-  if (missing.length === 0) {
-    alert(`✅ All zones for "${zoneName}" are selected!`);
-  } else {
-    console.log("❌ Missing Names:", missingNames);
-    console.log("❌ Missing Codes:", missingCodes);
-    prompt(`⚠️ Missing zones for "${zoneName}":\n\n(Copy below)`, missing.join(', '));
-  }
+  if (!zoneName || !zoneMap[zoneName]) return console.warn("⚠️ Zone not found in map or not selected yet.");
+  await runSelection(zoneMap[zoneName]);
 })();
