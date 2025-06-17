@@ -1629,7 +1629,7 @@
     ],
    };
 
-    const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();More actions
+    const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
 
   const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
   const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
