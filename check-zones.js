@@ -949,7 +949,7 @@
     "Um Qaseer", "Jabel Al Nasr", "Jabel Amman", "Fuheis"
     ],
     "7th Circle": [
-    "Swilih", "Jubaiha", "Urdon street", "Jabel Jufeh", "Marj Hamam", 
+    "Swilih", "Jubaiha", "Urdon street", "Marj Hamam", 
     "Um Qaseer", "Jabel Jufeh", "Jabel Al Nasr", "Jabel Amman", "Fuheis"
     ],
     "8th Circle": [
