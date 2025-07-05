@@ -949,7 +949,7 @@
     "Um Qaseer", "Jabel Al Nasr", "Jabel Amman", "Fuheis"
     ],
     "7th Circle": [
-    "Swilih", "Jubaiha", "Urdon street", "Marj Hamam", 
+    "Swilih", "Jubaiha", "Urdon street", "Jabel Jufeh", "Marj Hamam", 
     "Um Qaseer", "Jabel Jufeh", "Jabel Al Nasr", "Jabel Amman", "Fuheis"
     ],
     "8th Circle": [
@@ -1629,10 +1629,28 @@
     ],
    };
 
-    const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
+  const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
 
-  const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
-  const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
+  // City detection - first element with title attribute
+  const selectionItems = Array.from(document.querySelectorAll('.ant-select-selection-item[title]'));
+  const cityElement = selectionItems[0];
+  const cityName = cityElement?.getAttribute('title')?.trim().toLowerCase();
+
+  const jordanCities = ["amman", "zarqa", "irbid"];
+  const uaeCities = ["dubai", "abu dhabi", "al ain"];
+
+  let region = null;
+  if (jordanCities.includes(cityName)) region = "Jordan";
+  else if (uaeCities.includes(cityName)) region = "UAE";
+
+  if (!region) {
+    alert(`⚠️ Could not determine region from city "${cityName || '(not found)'}"`);
+    return;
+  }
+  console.log(`🌍 Region detected: ${region}`);
+
+  // Zone detection - second element with title attribute (usually)
+  const zoneElement = selectionItems.length > 1 ? selectionItems[1] : selectionItems[0];
   const zoneName = zoneElement?.getAttribute("title")?.trim();
 
   console.log("👉 Selected Zone:", zoneName);
@@ -1642,7 +1660,6 @@
   }
 
   const rawExpected = zoneMap[zoneName] || [];
-
   const expectedNames = [];
   const expectedCodes = [];
 
@@ -1654,6 +1671,7 @@
     }
   }
 
+  // Selected zonals
   const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item-content');
   const selectedNames = [];
   const selectedCodes = [];
@@ -1669,15 +1687,38 @@
     if (namePart) selectedNames.push(normalize(namePart));
   });
 
-  const missingNames = expectedNames.filter(n => !selectedNames.includes(n));
-  const missingCodes = expectedCodes.filter(c => !selectedCodes.includes(c));
-  const missing = [...missingNames, ...missingCodes].filter(Boolean);
+  // Compare based on region
+  let missing = [];
+  let extra = [];
 
-  if (missing.length === 0) {
-    alert(`✅ All zones for "${zoneName}" are selected!`);
-  } else {
+  if (region === "Jordan") {
+    const missingNames = expectedNames.filter(n => !selectedNames.includes(n));
+    const extraNames = selectedNames.filter(n => !expectedNames.includes(n));
+    missing = missingNames;
+    extra = extraNames;
+
     console.log("❌ Missing Names:", missingNames);
+    console.log("⚠️ Extra Names:", extraNames);
+
+  } else if (region === "UAE") {
+    const missingCodes = expectedCodes.filter(c => !selectedCodes.includes(c));
+    const extraCodes = selectedCodes.filter(c => !expectedCodes.includes(c));
+    missing = missingCodes;
+    extra = extraCodes;
+
     console.log("❌ Missing Codes:", missingCodes);
-    prompt(`⚠️ Missing zones for "${zoneName}":\n\n(Copy below)`, missing.join(', '));
+    console.log("⚠️ Extra Codes:", extraCodes);
+  }
+
+  // Show results
+  if (missing.length === 0 && extra.length === 0) {
+    alert(`✅ All zones for "${zoneName}" are correctly selected!`);
+  } else {
+    if (missing.length > 0) {
+      prompt(`⚠️ Missing zones for "${zoneName}":\n\n(Copy below)`, missing.join(', '));
+    }
+    if (extra.length > 0) {
+      prompt(`⚠️ Extra zones that do NOT belong to "${zoneName}":\n\n(Review these)`, extra.join(', '));
+    }
   }
 })();
