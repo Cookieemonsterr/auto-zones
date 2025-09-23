@@ -1647,6 +1647,33 @@
     "Mezyad": [
     "24299", "24297", "24298", "242300"
     ],
+    "Al Rahmania": [
+    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
+    "Al Hoshi"
+    ],
+    "Al Siyouh": [
+    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
+    "Al Hoshi"
+    ],
+    "Sajaa Industrial Area": [
+    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
+    "Al Hoshi"
+    ],
+    "Muwaileh": [
+    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
+    "Al Hoshi", "Downtown Sharjah"
+    ],
+    "MDowntown Sharjah": [
+    "Al Rahmania", "Al Siyouh", "Hay Barashi", "Al Hoshi", "Downtown Sharjah"
+    ],
+    "Hay Barashi": [
+    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
+    "Al Hoshi", "Downtown Sharjah"
+    ],
+    "Al Hoshi": [
+    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
+    "Al Hoshi", "Downtown Sharjah"
+    ],
    };
 
   const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
