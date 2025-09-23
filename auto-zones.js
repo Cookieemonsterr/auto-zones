@@ -1675,6 +1675,207 @@
     "Al Hoshi", "Downtown Sharjah"
     ],
    };
+// ===== Brand + context detection (plug after zoneMap) =====
+function normalize(s){ return (s||"").toLowerCase().replace(/\s+/g,"").replace(/['’`]/g,""); }
+
+// Try likely places for the brand (sidebar header/crumb/title/inputs)
+function detectBrandName(){
+  const candidates = [
+    // left sidebar header / app title
+    document.querySelector('.ant-layout-sider .ant-typography, .ant-layout-sider h1, .ant-layout-sider [class*="title"]'),
+    // page header
+    document.querySelector('.ant-page-header-heading-title, .ant-page-header, header h1, header .ant-typography'),
+    // breadcrumb
+    document.querySelector('.ant-breadcrumb, nav[aria-label="breadcrumb"]'),
+    // first big heading on page
+    document.querySelector('h1, h2'),
+    // brand fields
+    document.querySelector('input[name*="brand" i], input[id*="brand" i]'),
+    document.querySelector('input[name*="restaurant" i], input[id*="restaurant" i]'),
+    // fallbacks
+    document.querySelector('[data-testid="brand-name"], .brand-name, .company-name')
+  ].filter(Boolean);
+
+  for (const el of candidates){
+    const txt = (el.value ?? el.textContent ?? "").trim();
+    if (txt) return txt;
+  }
+  return (document.title || "").trim();
+}
+
+// Read a form field by its label text (works with Ant form items)
+function getLabeledValue(labelText){
+  const items = document.querySelectorAll('.ant-form-item');
+  for (const it of items){
+    const label = it.querySelector('.ant-form-item-label')?.textContent?.trim() || "";
+    if (!label) continue;
+    if (label.replace(/\*/g,'').trim().toLowerCase() === labelText.toLowerCase()){
+      // select value (Ant Select) or input value
+      const selected = it.querySelector('.ant-select-selection-item[title]')?.getAttribute('title');
+      if (selected) return selected;
+      const inp = it.querySelector('input, textarea');
+      if (inp?.value) return inp.value;
+      const txt = it.querySelector('.ant-typography, .ant-input')?.textContent?.trim();
+      if (txt) return txt;
+    }
+  }
+  return null;
+}
+
+// --- McDonald's in Al Ain: brand-specific overrides (edit these arrays if needed) ---
+const MCD_AL_AIN_ZONES = {
+  "Al Foaa": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108"
+  ],
+  "Hili": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24105"
+  ],
+  "Al Masoudi": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114"
+  ],
+  "Al Qattara": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+  ],
+  "Al Mraijeb": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+  ],
+  "Al Jimi": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+  ],
+  "Al Amerya": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+  ],
+  "Al Mu'tarid": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113",
+    "24112"
+  ],
+  "City Center": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113",
+    "24112"
+  ],
+  "Towayya": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113"
+  ],
+  "Al khabisi": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24094",
+    "24091", "24103", "24106", "24105", "24098", "24109", "24116", "24114",
+    "24113", "24112"
+  ],
+  "Al Sarooj": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24105",
+    "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Industrial Area": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Falaj Hazza": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24091",
+    "24103", "24106", "24105", "24098", "24109", "24116", "24114", "24113",
+    "24112"
+  ],
+  "Al Ain Zoo": [
+    "24110", "24099", "24102", "24100", "24096", "24093", "24101", "24107",
+    "24104", "24111", "24115", "24097", "24108", "24092", "24091", "24103",
+    "24106", "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Al Amra": [
+    "24094", "24091", "24103", "24106", "24105", "24098", "24109", "24116"
+  ],
+  "Airport": [
+    "24100", "24096", "24093", "24101", "24115", "24097", "24108", "24094",
+    "24091", "24103", "24106", "24105", "24098", "24109", "24116"
+  ],
+  "Al Salamat": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113"
+  ],
+  "Bateen": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Asharij": [
+    "24095", "24110", "24099", "24102", "24100", "24096", "24093", "24101",
+    "24107", "24104", "24111", "24115", "24097", "24108", "24092", "24094",
+    "24091", "24103", "24106", "24105", "24098", "24109", "24116", "24114",
+    "24113", "24112"
+  ],
+  "Al Maqam": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Ghanima": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Zakher": [
+    "24102", "24100", "24096", "24093", "24101", "24107", "24104", "24111",
+    "24115", "24097", "24108", "24092", "24094", "24091", "24103", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Shiab Al Ashkher": [
+    "24110", "24099", "24102", "24100", "24096", "24093", "24101", "24107",
+    "24104", "24111", "24115", "24097", "24108", "24092", "24091", "24103",
+    "24106", "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Nimah": [
+    "24099", "24102", "24100", "24096", "24093", "24101", "24107", "24104",
+    "24111", "24115", "24097", "24108", "24092", "24106", "24105", "24098",
+    "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Mbazzra": [
+    "24101", "24107", "24104", "24111", "24097", "24108", "24092", "24106",
+    "24105", "24098", "24109", "24116", "24114", "24113", "24112"
+  ],
+  "Bawadi": [
+    "24297", "24298", "242300", "24299", "24104", "24111", "24107", "24092",
+    "24101", "24108"
+  ],
+  "Al Dahir": [
+    "24298", "24297", "242300", "24299", "24104", "24111"
+  ],
+  "Um Ghafah": [
+    "242300", "24297", "24298", "24299"
+  ],
+  "Mezyad": [
+    "24299", "24297", "24298", "242300"
+  ]
+};
+// Helper: context flags
+function isMcDonalds(){
+  return /mcdonald/.test(normalize(detectBrandName()));
+}
+function isAlAinCity(){
+  const city = getLabeledValue('City') || '';
+  return /alain/.test(normalize(city));
+}
+const AL_AIN_ZONE_NAMES_SET = new Set(Object.keys(MCD_AL_AIN_ZONES).map(normalize));
 
   function setNativeValue(element, value) {
     const lastValue = element.value;
@@ -1732,16 +1933,20 @@
     console.log('🎯 Done selecting all zonals!');
   }
 
-  const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
-  const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
-  const zoneName = zoneElement?.getAttribute("title")?.trim();
-  console.log("👉 Selected Zone:", zoneName);
-  if (!zoneName || !zoneMap[zoneName]) return console.warn("⚠️ Zone not found in map or not selected yet.");
-  await runSelection(zoneMap[zoneName]);
-})();
+  // NEW (paste this)
+const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
+const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
+const zoneName = zoneElement?.getAttribute("title")?.trim();
 
+console.log("👉 Selected Zone:", zoneName);
+if (!zoneName) return console.warn("⚠️ No zone selected yet.");
 
+const fallback = zoneMap[zoneName];
+const useMcdAlAin = isMcDonalds() && (isAlAinCity() || AL_AIN_ZONE_NAMES_SET.has(normalize(zoneName)));
+const chosen = useMcdAlAin && MCD_AL_AIN_ZONES[zoneName] ? MCD_AL_AIN_ZONES[zoneName] : fallback;
 
+if (!chosen) return console.warn("⚠️ Zone not found in any map:", zoneName);
 
-
-
+console.log(useMcdAlAin ? "🍟 McDonald's Al Ain mode ON" : "📦 Default zoneMap");
+await runSelection(chosen);
+  })();
