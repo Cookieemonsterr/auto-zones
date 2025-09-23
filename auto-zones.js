@@ -1663,7 +1663,7 @@
     "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
     "Al Hoshi", "Downtown Sharjah"
     ],
-    "MDowntown Sharjah": [
+    "Downtown Sharjah": [
     "Al Rahmania", "Al Siyouh", "Hay Barashi", "Al Hoshi", "Downtown Sharjah"
     ],
     "Hay Barashi": [
@@ -1950,3 +1950,4 @@ if (!chosen) return console.warn("⚠️ Zone not found in any map:", zoneName);
 console.log(useMcdAlAin ? "🍟 McDonald's Al Ain mode ON" : "📦 Default zoneMap");
 await runSelection(chosen);
   })();
+
