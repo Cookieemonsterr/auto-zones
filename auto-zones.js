@@ -1802,24 +1802,63 @@ const AL_AIN_ZONE_NAMES_SET = new Set(Object.keys(MCD_AL_AIN_ZONES).map(normaliz
     console.log('🎯 Done selecting all zonals!');
   }
 
-  // NEW (paste this)
-const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
-const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
-const zoneName = zoneElement?.getAttribute("title")?.trim();
+  // ===== NEW (paste this, fixed) =====
+function getZoneNameFromForm() {
+  // Prefer the Form.Item whose label looks like "Zone", "Area", or "Neighborhood"
+  const items = document.querySelectorAll('.ant-form-item');
+  for (const it of items) {
+    const raw = it.querySelector('.ant-form-item-label')?.textContent || '';
+    const label = raw.replace(/\*/g,'').trim().toLowerCase();
+    if (!/(^|\s)(zone|area|neighbou?rhood)\b/.test(label)) continue;
 
-console.log("👉 Selected Zone:", zoneName);
-if (!zoneName) return console.warn("⚠️ No zone selected yet.");
+    const selected = it.querySelector('.ant-select-selection-item[title]')?.getAttribute('title')?.trim();
+    if (selected) return selected;
 
-const fallback = zoneMap[zoneName];
-const useMcdAlAin = isMcDonalds() && (isAlAinCity() || AL_AIN_ZONE_NAMES_SET.has(normalize(zoneName)));
-const chosen = useMcdAlAin && MCD_AL_AIN_ZONES[zoneName] ? MCD_AL_AIN_ZONES[zoneName] : fallback;
+    const inp = it.querySelector('input, textarea');
+    if (inp?.value?.trim()) return inp.value.trim();
 
-if (!chosen) return console.warn("⚠️ Zone not found in any map:", zoneName);
+    const txt = it.querySelector('.ant-typography, .ant-input')?.textContent?.trim();
+    if (txt) return txt;
+  }
+  return null;
+}
 
-console.log(useMcdAlAin ? "🍟 McDonald's Al Ain mode ON" : "📦 Default zoneMap");
-await runSelection(chosen);
-  })();
+(function resolveAndRun(){
+  // 1) Try to read from the labeled form control first
+  let zoneName = getZoneNameFromForm();
 
+  // 2) Fallback: pick a likely selected ant-select chip (prefer the last one on the page)
+  if (!zoneName) {
+    const chips = Array.from(document.querySelectorAll('#root .ant-select-selection-item[title]'));
+    zoneName = chips.at(-1)?.getAttribute('title')?.trim() || null;
+  }
 
+  // 3) Last resort: any visible heading text (very weak signal)
+  if (!zoneName) {
+    const h = document.querySelector('h1, h2, .ant-page-header-heading-title');
+    zoneName = h?.textContent?.trim() || null;
+  }
 
+  console.log("👉 Selected Zone:", zoneName);
+  if (!zoneName) {
+    console.warn("⚠️ No zone selected yet.");
+    return;
+  }
 
+  // Decide which map to use
+  const fallback = zoneMap[zoneName];
+  const useMcdAlAin = isMcDonalds() && (isAlAinCity() || AL_AIN_ZONE_NAMES_SET.has(normalize(zoneName)));
+  const rawChosen = useMcdAlAin && MCD_AL_AIN_ZONES[zoneName] ? MCD_AL_AIN_ZONES[zoneName] : fallback;
+
+  if (!rawChosen) {
+    console.warn("⚠️ Zone not found in any map:", zoneName);
+    return;
+  }
+
+  // De-duplicate while preserving order
+  const seen = new Set();
+  const chosen = rawChosen.filter(code => (seen.has(code) ? false : (seen.add(code), true)));
+
+  console.log(useMcdAlAin ? "🍟 McDonald's Al Ain mode ON" : "📦 Default zoneMap");
+  (async () => { await runSelection(chosen); })();
+})();
