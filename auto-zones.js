@@ -1907,5 +1907,5 @@ function getZoneNameFromForm() {
   const chosen = rawChosen.filter(code => (seen.has(code) ? false : (seen.add(code), true)));
 
   console.log(useMcdAlAin ? "🍟 McDonald's Al Ain mode ON" : "📦 Default zoneMap");
-  (async () => { await runSelection(chosen); })();
-})();
+(async () => { await runSelection(chosen); })();
+})(); // ← this was missing
