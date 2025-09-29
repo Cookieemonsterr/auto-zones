@@ -1909,3 +1909,4 @@ function getZoneNameFromForm() {
   console.log(useMcdAlAin ? "🍟 McDonald's Al Ain mode ON" : "📦 Default zoneMap");
 (async () => { await runSelection(chosen); })();
 })(); // ← this was missing
+})();
