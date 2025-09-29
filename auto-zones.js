@@ -1744,7 +1744,9 @@ function isAlAinCity(){
   const city = getLabeledValue('City') || '';
   return /alain/.test(normalize(city));
 }
-const AL_AIN_ZONE_NAMES_SET = new Set(Object.keys(MCD_AL_AIN_ZONES).map(normalize));
+const AL_AIN_ZONE_NAMES_SET = new Set(
+  Object.keys(window.MCD_AL_AIN_ZONES || {}).map(normalize)
+);
 
   function setNativeValue(element, value) {
     const lastValue = element.value;
@@ -1768,39 +1770,84 @@ const AL_AIN_ZONE_NAMES_SET = new Set(Object.keys(MCD_AL_AIN_ZONES).map(normaliz
     }
   }
 
-  async function openDropdownIfNeeded(input) {
-    const selectWrapper = input.closest('.ant-select');
-    if (selectWrapper) {
-      selectWrapper.click();
-      await new Promise(r => setTimeout(r, 500));
+  // --- Find the correct Zones/Areas field by its label ---
+function findZonesSelect() {
+  // look for a form item whose label suggests zones/areas
+  const labelRegex = /(zone|areas?|neigh|coverage|region|district)/i;
+  const items = Array.from(document.querySelectorAll('.ant-form-item'));
+  for (const it of items) {
+    const label = (it.querySelector('.ant-form-item-label')?.textContent || '').trim();
+    if (labelRegex.test(label)) {
+      const s = it.querySelector('.ant-select');
+      if (s) return s;
     }
+  }
+  // if a dropdown is already open, use it
+  const open = document.querySelector('.ant-select-open');
+  if (open) return open;
+  // fallback: last multiselect on the page
+  const multis = document.querySelectorAll('.ant-select-multiple');
+  return multis[multis.length - 1] || document.querySelector('.ant-select');
+}
+
+async function openDropdownIfNeeded(selectEl) {
+  const trigger = selectEl?.querySelector('.ant-select-selector');
+  trigger?.click();
+  await new Promise(r => setTimeout(r, 350));
+}
+
+function getSearchInputIn(selectEl){
+  return selectEl?.querySelector('.ant-select-selection-search input')
+      || document.querySelector('.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-selection-search input');
+}
+
+// --- ALWAYS type/select inside the Zones/Areas field we found ---
+async function selectZone(zoneText) {
+  const selectEl = findZonesSelect();
+  if (!selectEl) return console.error('❌ Target zones/areas field not found.');
+
+  await openDropdownIfNeeded(selectEl);
+
+  const input = getSearchInputIn(selectEl);
+  if (!input) return console.error('❌ Search input not found inside zones/areas field.');
+
+  await humanTypeProperly(input, String(zoneText));
+  await new Promise(r => setTimeout(r, 600));
+
+  const options = Array.from(document.querySelectorAll(
+    '.ant-select-dropdown:not(.ant-select-dropdown-hidden) .ant-select-item-option'
+  ));
+  const needle = String(zoneText).toLowerCase();
+
+  const opt =
+    options.find(o => o.textContent.trim().toLowerCase().includes(needle) && o.getAttribute('aria-selected') !== 'true')
+    || options.find(o => o.textContent.trim().toLowerCase().includes(needle));
+
+  if (!opt) {
+    console.warn(`❌ Option not found for: ${zoneText}`);
+    return;
   }
 
-  async function selectZone(zoneCode) {
-    console.log(`🔎 Searching for zone: ${zoneCode}`);
-    const input = document.querySelector('div.ant-select-selection-search input');
-    if (!input) return console.error('❌ Input not found!');
-    await openDropdownIfNeeded(input);
-    await humanTypeProperly(input, zoneCode);
-    await new Promise(r => setTimeout(r, 900));
-    const options = Array.from(document.querySelectorAll('.ant-select-item-option-content'));
-    const option = options.find(opt => opt.textContent.includes(zoneCode));
-    if (option) {
-      option.click();
-      console.log(`✅ Added: ${zoneCode}`);
-      await new Promise(r => setTimeout(r, 500));
-    } else {
-      console.error(`❌ Zone not found after typing: ${zoneCode}`);
-    }
-  }
+  opt.click();
+  await new Promise(r => setTimeout(r, 250));
 
-  async function runSelection(zoneCodes) {
-    for (let code of zoneCodes) {
-      await selectZone(code);
-      await new Promise(r => setTimeout(r, 600));
-    }
-    console.log('🎯 Done selecting all zonals!');
+  // verify the chip appeared INSIDE THIS select (not some other one)
+  const chips = Array.from(selectEl.querySelectorAll('.ant-select-selection-item[title]'));
+  const ok = chips.some(c => (c.getAttribute('title') || '').trim().toLowerCase() === needle);
+  if (ok) {
+    console.log(`✅ Added: ${zoneText}`);
+  } else {
+    console.warn(`⚠️ Clicked "${zoneText}" but no tag in the zones field (maybe already selected or wrong field).`);
   }
+}
+
+async function runSelection(zoneCodes) {
+  for (const code of zoneCodes) {
+    await selectZone(code);
+    await new Promise(r => setTimeout(r, 550));
+  }
+  console.log('🎯 Done selecting all zonals!');
+}
 
   // ===== NEW (paste this, fixed) =====
 function getZoneNameFromForm() {
