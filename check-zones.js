@@ -1640,7 +1640,7 @@
     "Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial",
     "Muwaileh Suburb","Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
     ],
-  "Alheera Suburb": [
+  "Al Heerah Suburb": [
     "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
     "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah",
     "Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
