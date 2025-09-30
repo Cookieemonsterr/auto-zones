@@ -84,6 +84,7 @@
     "21489","21491","21420","21487","21588","21425","21593","21422","21592",
     "22852"
   ],
+
   "Al Khawaneej": [
     "21443","22824","21486","21444","21445","21442","21441","21425","21418",
     "21613","21593","21592","22825"
@@ -117,45 +118,45 @@
   "Al Muteena": [
     "21488","21613","21476","21418","21425","21587","21477","21491","21487",
     "21420","21489","21421","21583","21593","21422","21419","21596","22852"
-    ],
-    "Al Nahda": [
+  ],
+  "Al Nahda": [
     "21425","21486","21488","21477","21418","21444","21613","21476","21587",
     "21487","21593","21420","22852"
-    ],
-    "Al Quoz": [
+  ],
+  "Al Quoz": [
     "21453","21427","21580","21459","21485","21588","21471","21579","21460",
     "21600","21598","21586","21605","21582","21575","21576","21599","21594",
     "21454","21493","21432","21431","21601","21470","21490","21424","21422",
     "21481","21596","21461","21462","21492","22830","21434","21597","21433",
     "21458","21452","21578","21577"
-    ],
-    "Al Quoz Industrial 3": [
+  ],
+  "Al Quoz Industrial 3": [
     "21453","21427","21580","21459","21485","21588","21471","21579","21460",
     "21600","21598","21586","21605","21582","21575","21576","21599","21594",
     "21454","21493","21432","21431","21601","21470","21490","21424","21422",
     "21481","21596","21461","21462","21492","22830","21434","21597","21433",
     "21458","21452","21578","21577"
-    ],
-    "Al Qusais": [
+  ],
+  "Al Qusais": [
     "21425","21486","21488","21477","21418","21444","21613","21476","21587",
     "21487","21593","21420","21443","22852"
-    ],
-    "Al Raffa": [
+  ],
+  "Al Raffa": [
     "21427","21490","21424","21481","21471","21579","21418","21587","21421",
     "21596","21488","21423","21583","21586","21482","21477","21613","21476",
     "21489","21491","21420","21487","21425","21593","21422","22852"
-    ],
-    "Al Rigga": [
+  ],
+  "Al Rigga": [
     "21488","21613","21476","21418","21425","21587","21477","21491","21487",
     "21420","21489","21421","21583","21593","21422","21419","22852"
-    ],
-    "Al Safa": [
+  ],
+  "Al Safa": [
     "21427","21490","21600","21598","21420","21487","21586","21588","21481",
     "21424","21470","21601","21582","21471","21422","21596","21579","21482",
     "21453","21459","21485","21460","21458","21575","21576","21599","21454",
     "21590","21592"
-    ],
-    "Al Satwa": [
+  ],
+  "Al Satwa": [
     "21596","21421","21487","21420","21491","21481","21424","21579","21471",
     "21586","21422","21490","21427","21482","21423","21588","21489","21488",
     "21577","21598","21590","22852","21613","21476","21477"
@@ -603,211 +604,213 @@
     "21427","21579", "21490","21590","21577","21488","21598","21601","21587","21418",
     "21422","21482","21578","21470","22852"
     ],
-      "Mohammed Bin Zayed City": [
-    "24176","24090","24173","24179","24170","24169","24189",
-    "24308","24309","24167","24161","24155","24186"
-  ],
-  "Mussafah": [
-    "24176","24090","24173","24179","24167","24308","24309",
-    "24189","24186","24170"
-  ],
-  "ICAD I": [
-    "24090","24176","24173","24179","24308","24309","24170"
-  ],
-  "Rabdan": [
-    "24308","24309","24179","24167","24185","24153","24175","24155",
-    "24176","24090","24173","24162","24151","24146","24157","24149",
-    "24178","24148","24154","24163","24166","24171","24165","24150",
-    "24187","24164"
-  ],
-  "Masdar City": [
-    "24175","24309","24308","24155","24188","24143","24189","24156",
-    "24159","24158","24186","24145","24147","24160","24161"
-  ],
-  "Al Raha": [
-    "24155","24309","24308","24188","24143","24175","24179","24156",
-    "24158","24159","24144","24145","24185","24167","24153"
-  ],
-  "Abu Dhabi International Airport": [
-    "24143","24155","24175","24156","24309","24308","24188","24186",
-    "24147","24158","24160","24159","24145","24144"
-  ],
-  "Al Reef": [
-    "24143","24155","24175","24156","24309","24308","24188","24186",
-    "24147","24158","24160","24159","24145","24144"
-  ],
-  "Yas Island": [
-    "24188","24155","24309","24145","24144","24156","24143","24175",
-    "24159","24158","24308","24147"
-  ],
-  "Khalifa City East": [
-    "24309","24308","24185","24179","24155","24186","24189","24143",
-    "24188","24156","24176","24145","24144","24158","24159","24161","24175"
-  ],
-  "Khalifa City West": [
-    "24308","24309","24185","24179","24155","24186","24189","24143",
-    "24188","24156","24167","24176","24090","24173","24160","24147","24153","24175"
-  ],
-  "Sas Al Nakhl": [
-    "24308","24309","24185","24179","24155","24186","24189","24143",
-    "24188","24156","24167","24176","24090","24171","24153","24154","24149",
-    "24157","24151","24175"
-  ],
-  "Al Mushrif": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24090","24179","24308","24182"
-  ],
-  "Al Zahiyah": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179"
-  ],
-  "Al Maryah Island": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179"
-  ],
-  "Al Danah": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179"
-  ],
-  "Al Reem Island": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182"
-  ],
-  "Al Manhal": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179"
-  ],
-  "Qasr Al Bahar": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179"
-  ],
-  "Al Khalidiyah": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179"
-  ],
-  "Al Nahyan": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179","24308"
-  ],
-  "Saadiyat Island": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182"
-  ],
-  "Al Bateen": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182","24179","24308"
-  ],
-  "Al Mina": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24182"
-  ],
-  "Hadbat Al Zafaranah": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24157","24179","24308","24182"
-  ],
-  "Al Marina": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24157","24182","24179"
-  ],
-  "Al Rawdah": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24157","24309","24308","24185","24179","24090","24176"
-  ],
-  "Al Markaziyah": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24157","24182"
-  ],
-  "Um Yifenah Island": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24157"
-  ],
-  "Al Hudariyat Island": [
-    "24153","24162","24151","24146","24157","24149","24178","24148",
-    "24154","24163","24166","24171","24165","24167","24150","24187",
-    "24164","24157"
-  ],
-  "Shakhbout City": [
-    "24186","24189","24309","24308","24170","24169","24161","24160",
-    "24172","24147","24143","24175","24156","24155"
-  ],
-  "Baniyas West": [
-    "24170","24169","24186","24189","24176","24161","24160","24172",
-    "24147","24143","24156","24179","24155"
-  ],
-  "Baniyas North": [
-    "24170","24169","24186","24189","24176","24161","24160","24172",
-    "24147","24143","24156","24179","24155"
-  ],
-  "Al Falah": [
-    "24147","24160","24186","24172","24143","24156","24169","24188",
-    "24155","24170","24308","24309"
-  ],
-  "Al Shamkha": [
-    "24160","24161","24170","24169","24186","24189","24147","24172",
-    "24309","24175","24308","24155","24188","24164"
-  ],
-  "Al Shawamekh": [
-    "24160","24161","24170","24169","24186","24189","24147","24172",
-    "24309","24175","24308","24155","24188"
-  ],
-  "Zayed City": [
-    "24160","24161","24170","24169","24186","24189","24147","24172",
-    "24309","24175","24308","24155","24188","24179","24167"
-  ],
-  "Madinat Al Riyad": [
-    "24160","24161","24170","24169","24186","24189","24147","24172",
-    "24309","24175","24308"
-  ],
-  "Al Wathba": [
-    "24172","24170","24169","24186"
-  ],
-  "Al Shahama New": [
-    "24159","24156","24143","24147","24188","24145","24144","24158",
-    "24183","24180","24181"
-  ],
-  "Al Bahyah West": [
-    "24145","24144","24183","24180","24181","24184","24158","24159",
-    "24156","24147","24143","24175"
-  ],
-  "Al Bahyah East": [
-    "24144","24184","24145","24183","24180","24181","24158","24159",
-    "24156","24143","24175"
-  ],
-  "Al Shahama Old": [
-    "24159","24158","24184","24181","24180","24183","24144","24145",
-    "24188","24156","24155","24175","24143","24147"
-  ],
-  "Sader": [
-    "24183","24180","24181","24184","24159","24158","24145","24144",
-    "24188","24156"
-  ],
-  "Rahbah East": [
-    "24180","24181","24183","24184","24159","24158","24144","24145",
-    "24188","24157","24143"
-  ],
-  "Rahbah West": [
-    "24180","24181","24183","24184","24159","24158","24144","24145",
-    "24188","24157","24143"
-  ],
-  "Samhah": [
-    "24184","24181","24180","24183","24159","24158","24144","24145"
+    "Mohammed Bin Zayed": [
+"24176","24090","24173","24179","24170","24169","24189","24308","24309",
+"24167","24161","24155","24186"
+],
+"Mussafah Industrial": [
+"24176","24090","24173","24179","24167","24308","24309","24189","24186","24170"
+],
+"ICAD I": [
+"24090","24176","24173","24179","24308","24309","24170"
+],
+"Khalifa": [
+],
+"Rabdan": [
+"24308","24309","24179","24167","24185","24153","24175","24155","24176",
+"24090","24173","24162","24151","24146","24157","24149","24178","24148",
+"24154","24163","24166","24171","24165","24150","24187","24164"
+],
+"Masdar City": [
+"24175","24309","24308","24155","24188","24143","24189","24156","24159",
+"24158","24186","24145","24147","24160","24161"
+],
+"Al Raha": [
+"24155","24309","24308","24188","24143","24175","24179","24156","24158",
+"24159","24144","24145","24185","24167","24153"
+],
+"Abu Dhabi International Airport": [
+"24143","24155","24175","24156","24309","24308","24188","24186","24147",
+"24158","24160","24159","24145","24144"
+],
+"Al Reef": [
+"24143","24155","24175","24156","24309","24308","24188","24186","24147",
+"24158","24160","24159","24145","24144"
+],
+"Yas Island": [
+"24188","24155","24309","24145","24144","24156","24143","24175","24159",
+"24158","24308","24147"
+],
+"Khalifa City East": [
+"24309","24308","24185","24179","24155","24186","24189","24143","24188",
+"24156","24176","24145","24144","24158","24159","24161","24175"
+],
+"Khalifa City West": [
+"24308","24309","24185","24179","24155","24186","24189","24143","24188",
+"24156","24167","24176","24090","24173","24160","24147","24153","24175"
+],
+"Sas Al Nakhl": [
+"24308","24309","24185","24179","24155","24186","24189","24143","24188",
+"24156","24167","24176","24090","24171","24153","24154","24149","24157",
+"24151","24175"
+],
+"Samaliya Island": [
+],
+"Island": [
+],
+"Al Mushrif": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24090",
+"24179","24308","24182"
+],
+"Al Zahiyah": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Al Maryah Island": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Al Danah": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Al Reem Island": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182"
+],
+"Al Manhal": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Qasr Al Bahar": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Al Khalidiyah": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Al Nahyan": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179","24308"
+],
+"Saadiyat Island": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182"
+],
+"Al Bateen": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179","24308"
+],
+"Al Mina": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182"
+],
+"Hadbat Al Zafaranah": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179","24308"
+],
+"Al Marina": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182",
+"24179"
+],
+"Al Rawdah": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24309",
+"24308","24185","24179","24090","24176"
+],
+"Al Markaziyah": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24182"
+],
+"Um Yifenah Island": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24157"
+],
+"Al Hudariyat Island": [
+"24153","24162","24151","24146","24157","24149","24178","24148","24154",
+"24163","24166","24171","24165","24167","24150","24187","24164","24157"
+],
+"Baniyas": [
+],
+"Shakhbout City": [
+"24186","24189","24309","24308","24170","24169","24161","24160","24172",
+"24147","24143","24175","24156","24155"
+],
+"Baniyas West": [
+"24170","24169","24186","24189","24176","24161","24160","24172","24147",
+"24143","24156","24179","24155"
+],
+"Baniyas North": [
+"24170","24169","24186","24189","24176","24161","24160","24172","24147",
+"24143","24156","24179","24155"
+],
+"Al Falah": [
+"24147","24160","24186","24172","24143","24156","24169","24188","24155",
+"24170","24308","24309"
+],
+"Al Shamkha": [
+"24160","24161","24170","24169","24186","24189","24147","24172","24309",
+"24175","24308","24155","24188"
+],
+"Al Shawamekh": [
+"24160","24161","24170","24169","24186","24189","24147","24172","24309",
+"24175","24308","24155","24188"
+],
+"Zayed City": [
+"24160","24161","24170","24169","24186","24189","24147","24172","24309",
+"24175","24308","24155","24188","24179","24167"
+],
+"Madinat Al Riyad": [
+"24160","24161","24170","24169","24186","24189","24147","24172","24309",
+"24175","24308"
+],
+"Al Wathba": [
+"24172","24170","24169","24186"
+],
+"Al Shahama": [
+],
+"Al Shahama New": [
+"24159","24156","24143","24147","24188","24145","24144","24158","24183",
+"24180","24181"
+],
+"Al Bahyah West": [
+"24145","24144","24183","24180","24181","24184","24158","24159","24156",
+"24147","24143","24175"
+],
+"Al Bahyah East": [
+"24144","24184","24145","24183","24180","24181","24158","24159","24156",
+"24143","24175"
+],
+"Al Shahama Old": [
+"24159","24158","24184","24180","24181","24183","24144","24145","24188",
+"24156","24155","24175","24143","24147"
+],
+"Sader": [
+"24183","24180","24181","24184","24159","24158","24145","24144","24188",
+"24156"
+],
+"Rahbah East": [
+"24180","24181","24183","24184","24159","24158","24144","24145","24188",
+"24157","24143"
+],
+"Rahbah West": [
+"24180","24181","24183","24184","24159","24158","24144","24145","24188",
+"24157","24143"
+],
+"Samhah": [
+"24184","24181","24180","24183","24159","24158","24144","24145"
     ],
     "4th Circle": [
     "Swilih", "Jubaiha", "Tabarbour", "Jabel Jufeh", "Marj Hamam", "Um Qaseer"
@@ -1515,35 +1518,235 @@
     "Mezyad": [
     "24299", "24297", "24298", "242300"
     ],
-    "Al Rahmania": [
-    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
-    "Al Hoshi"
+  "Al Khan": [
+    "Al Houma","Al Khaledia","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+    "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan","Hay Al Qasimiah","Hay Al Sharq",
+    "Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+    "Sharjah Airport","University City Sharjah"
     ],
-    "Al Siyouh": [
-    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
-    "Al Hoshi"
+  "Al Mamzar": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+    "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan","Hay Al Qasimiah","Hay Al Sharq",
+    "Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+    "Sharjah Airport","University City Sharjah"
     ],
-    "Sajaa Industrial Area": [
-    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
-    "Al Hoshi"
+  "Al Majaz": [
+    "Al Houma","Al Khaledia","Al Khan","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+    "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah",
+    "Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+    "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
     ],
-    "Muwaileh": [
-    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
-    "Al Hoshi", "Downtown Sharjah"
+  "Al Khaledia": [
+    "Al Houma","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+    "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan","Hay Al Qasimiah","Hay Al Sharq",
+    "Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+    "Sharjah Airport","Um Fanain","University City Sharjah"
     ],
-    "Downtown Sharjah": [
-    "Al Rahmania", "Al Siyouh", "Hay Barashi", "Al Hoshi", "Downtown Sharjah"
+  "Bu Shaghara": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Falah Sharjah","Halwan","Hay Al Badee",
+    "Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+    "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
     ],
-    "Hay Barashi": [
-    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
-    "Al Hoshi", "Downtown Sharjah"
+  "Industrial Area": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Qasimiah","Hay Al Sharq","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+    "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
     ],
-    "Al Hoshi": [
-    "Al Rahmania", "Al Siyouh", "Sajaa Industrial Area", "Muwaileh", "Hay Barashi",
-    "Al Hoshi", "Downtown Sharjah"
+  "Muwaileh Commercial": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+    "University City Sharjah"
     ],
-   };
-
+  "Halwan": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja",
+    "Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Hay Al Qasimiah": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+    "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Al Mussalla": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+    "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah",
+    "Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+    "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Mughaider Suburb": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+    "University City Sharjah"
+    ],
+  "Al Quoz Sharjah": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Rahmania Suburb","Al Ramaqia",
+    "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Al Ramtha": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Al Ramaqia": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Muwafja": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+    "Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+    "Industrial Area","Mughaider Suburb","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Al Yash": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Al Swaihat": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Hay Al Sharq": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Qasimiah","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+    "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Rolla": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+    "Muwaileh Suburb","Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Alheera Suburb": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah",
+    "Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+    "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Al Riqa Suburb": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+    "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+    "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+    ],
+  "Saif Zone": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+    "Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+    "Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "University City Sharjah": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+    "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain"
+    ],
+  "Muwaileh Suburb": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+    "Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+    "Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Rolla","Saif Zone","Sharjah Airport",
+    "Siyouh Suburb","Um Fanain","University City Sharjah"
+    ],
+  "Hay Hoshi": [
+    "Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha","Al Ruqa Al Hamra","Al Ruwaidat Suburb",
+    "Al Swaihat","Al Yash","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi","Mughaider Suburb","Muwafja",
+    "Muwaileh Commercial","Muwaileh Suburb","Saif Zone","Sharjah Airport","Siyouh Suburb","Um Fanain","University City Sharjah"
+    ],
+  "Hay Al Badee": [
+    "Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
+    "Al Ruwaidat Suburb","Al Swaihat","Al Yash","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain","Hay Barashi",
+    "Hay Hoshi","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Saif Zone","Sharjah Airport",
+    "Siyouh Suburb","Um Fanain","University City Sharjah"
+    ],
+  "Hay Barashi": [
+    "Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha","Al Ruqa Al Hamra","Al Ruwaidat Suburb",
+    "Al Sajaa","Al Swaihat","Al Yash","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Hoshi","Mughaider Suburb",
+    "Muwafja","Muwaileh Commercial","Muwaileh Suburb","Saif Zone","Sharjah Airport","Siyouh Suburb","Um Fanain",
+    "University City Sharjah"
+    ],
+  "Hay Al Atain": [
+    "Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
+    "Al Ruwaidat Suburb","Al Sajaa","Al Swaihat","Al Yash","Falah Sharjah","Halwan","Hay Al Badee","Hay Barashi","Hay Hoshi",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Saif Zone","Sharjah Airport","Siyouh Suburb",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Falah Sharjah": [
+    "Al Houma","Al Majaz","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+    "Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Sajaa","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan",
+    "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Siyouh Suburb","Um Fanain","University City Sharjah"
+    ],
+  "Al Rahmania Suburb": [
+    "Al Houma","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Sajaa","Al Swaihat",
+    "Al Yash","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi","Hay Hoshi","Muwafja","Muwaileh Suburb",
+    "Saif Zone","Sharjah Airport","Siyouh Suburb","Um Fanain"
+    ],
+  "Al Sajaa": [
+    "Al Rahmania Suburb","Al Ruwaidat Suburb","Falah Sharjah","Hay Al Atain","Hay Barashi","Siyouh Suburb"
+    ],
+  "Siyouh Suburb": [
+    "Al Rahmania Suburb","Al Ruwaidat Suburb","Al Sajaa","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi",
+    "Hay Hoshi","Muwaileh Suburb","Sharjah Airport"
+    ],
+  "Al Ruwaidat Suburb": [
+    "Al Rahmania Suburb","Al Sajaa","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi","Hay Hoshi",
+    "Sharjah Airport","Siyouh Suburb","Um Fanain"
+    ],
+  "Al Houma": [
+    "Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia",
+    "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Al Ruqa Al Hamra": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
+    "Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area",
+    "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+    "Um Fanain","University City Sharjah"
+    ],
+  "Um Fanain": [
+    "Al Houma","Al Khaledia","Al Majaz","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha",
+    "Al Riqa Suburb","Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+    "Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+    "Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+    "Sharjah Airport","University City Sharjah"
+    ],
+  "Sharjah Airport": [
+    "Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mamzar","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+    "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Swaihat","Al Yash",
+    "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah",
+    "Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+    "Muwaileh Suburb","Rolla","Saif Zone","Siyouh Suburb","Um Fanain","University City Sharjah"
+    ]
+};
   const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
 
   // City detection - first element with title attribute
