@@ -1755,7 +1755,7 @@
   const cityName = cityElement?.getAttribute('title')?.trim().toLowerCase();
 
   const jordanCities = ["amman", "zarqa", "irbid"];
-  const uaeCities = ["dubai", "abu dhabi", "al ain"];
+  const uaeCities = ["dubai", "abu dhabi", "al ain", "Sharjah"];
 
   let region = null;
   if (jordanCities.includes(cityName)) region = "Jordan";
