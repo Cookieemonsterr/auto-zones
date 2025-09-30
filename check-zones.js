@@ -1805,27 +1805,28 @@
     if (namePart) selectedNames.push(normalize(namePart));
   });
 
-  // Compare based on region
-  let missing = [];
-  let extra = [];
+   // --- Decide comparison mode ---
+  const compareByNames =
+    (region === "Jordan") || (cityName === "sharjah") || (expectedCodes.length === 0);
 
-  if (region === "Jordan") {
+  let missing = [], extra = [];
+
+  if (compareByNames) {
     const missingNames = expectedNames.filter(n => !selectedNames.includes(n));
-    const extraNames = selectedNames.filter(n => !expectedNames.includes(n));
+    const extraNames   = selectedNames.filter(n => !expectedNames.includes(n));
     missing = missingNames;
-    extra = extraNames;
+    extra   = extraNames;
 
     console.log("❌ Missing Names:", missingNames);
-    console.log("⚠️ Extra Names:", extraNames);
-
-  } else if (region === "UAE") {
+    console.log("⚠️ Extra Names:",   extraNames);
+  } else {
     const missingCodes = expectedCodes.filter(c => !selectedCodes.includes(c));
-    const extraCodes = selectedCodes.filter(c => !expectedCodes.includes(c));
+    const extraCodes   = selectedCodes.filter(c => !expectedCodes.includes(c));
     missing = missingCodes;
-    extra = extraCodes;
+    extra   = extraCodes;
 
     console.log("❌ Missing Codes:", missingCodes);
-    console.log("⚠️ Extra Codes:", extraCodes);
+    console.log("⚠️ Extra Codes:",   extraCodes);
   }
 
   // Show results
