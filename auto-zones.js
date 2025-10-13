@@ -1742,7 +1742,7 @@
     "Siyouh Suburb", "Um Fanain", "University City Sharjah"
   ]
   };
-function setNativeValue(element, value) {
+ function setNativeValue(element, value) {
     const lastValue = element.value;
     element.value = value;
     const event = new Event("input", { bubbles: true });
@@ -1754,54 +1754,183 @@ function setNativeValue(element, value) {
 
   async function humanTypeProperly(input, text) {
     input.focus();
-    setNativeValue(input, '');
-    input.dispatchEvent(new Event('input', { bubbles: true }));
-    for (let char of text) {
+    setNativeValue(input, "");
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    for (let char of String(text)) {
       const newValue = input.value + char;
       setNativeValue(input, newValue);
-      input.dispatchEvent(new Event('input', { bubbles: true }));
-      await new Promise(r => setTimeout(r, 60));
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      await new Promise((r) => setTimeout(r, 60));
     }
   }
 
   async function openDropdownIfNeeded(input) {
-    const selectWrapper = input.closest('.ant-select');
+    const selectWrapper = input.closest(".ant-select");
     if (selectWrapper) {
       selectWrapper.click();
-      await new Promise(r => setTimeout(r, 500));
+      await new Promise((r) => setTimeout(r, 500));
     }
   }
 
-  async function selectZone(zoneCode) {
-    console.log(`🔎 Searching for zone: ${zoneCode}`);
-    const input = document.querySelector('div.ant-select-selection-search input');
-    if (!input) return console.error('❌ Input not found!');
+  // ------------------------------------------------------------
+  // 3) SMART MATCHING (name collisions without changing query)
+  // ------------------------------------------------------------
+  const SAJAA_RE = /sajaa|saja|al\s*saj/i;
+
+  function normalize(s) {
+    return (s || "")
+      .toLowerCase()
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "") // strip diacritics
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function wholeWordIncludes(haystack, needle) {
+    // checks needle as a whole token within haystack
+    const n = String(needle).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(?:^|\\b|\\s)${n}(?:\\b|\\s|$)`, "i");
+    return re.test(haystack);
+  }
+
+  function scoreOption(optionText, targetText, parentText) {
+    // Higher score = better
+    const rawO = optionText || "";
+    const rawT = String(targetText || "");
+    const rawP = String(parentText || "");
+
+    const o = normalize(rawO);
+    const t = normalize(rawT);
+    const p = normalize(rawP);
+
+    let score = 0;
+    if (!o) return score;
+
+    const isNumericTarget = /^\d+$/.test(rawT);
+
+    // 1) Exact / tight matches
+    if (o === t) score += 10;
+    if (o.startsWith(t)) score += 3;
+
+    // 2) Contains (give token-aware a bigger boost)
+    if (o.includes(t)) score += 2;
+    if (wholeWordIncludes(rawO, rawT)) score += 4;
+
+    // 3) Numeric code friendliness
+    if (isNumericTarget) {
+      if (rawO.trim() === rawT) score += 12;                 // exact token = king
+      if (wholeWordIncludes(rawO, rawT)) score += 6;         // exact code as a token
+      // if option has other digits but not our code, small penalty
+      if (/\d/.test(rawO) && !wholeWordIncludes(rawO, rawT)) score -= 2;
+    }
+
+    // 4) Parent zone as tie-breaker ONLY (we never type it)
+    if (p && o.includes(p)) score += 3;
+    if (p && wholeWordIncludes(rawO, rawP)) score += 2;
+
+    // 5) Heuristic penalty for known wrong parent (e.g., Sajaa)
+    if (p && SAJAA_RE.test(rawO) && !SAJAA_RE.test(rawP)) score -= 5;
+
+    // 6) Slight length sanity: very long labels that barely match get nudged down
+    if (o.length > 60 && !o.startsWith(t)) score -= 1;
+
+    return score;
+  }
+
+  async function selectZone(targetLabel, parentZoneName) {
+    console.log(`🔎 Searching: "${targetLabel}" (parent tie-break: ${parentZoneName || "-"})`);
+
+    const input = document.querySelector("div.ant-select-selection-search input");
+    if (!input) return console.error("❌ Input not found!");
+
+    // Type ONLY the target (code or name)
     await openDropdownIfNeeded(input);
-    await humanTypeProperly(input, zoneCode);
-    await new Promise(r => setTimeout(r, 900));
-    const options = Array.from(document.querySelectorAll('.ant-select-item-option-content'));
-    const option = options.find(opt => opt.textContent.includes(zoneCode));
-    if (option) {
-      option.click();
-      console.log(`✅ Added: ${zoneCode}`);
-      await new Promise(r => setTimeout(r, 500));
+    await humanTypeProperly(input, String(targetLabel));
+    await new Promise((r) => setTimeout(r, 900));
+
+    let options = Array.from(
+      document.querySelectorAll(".ant-select-item-option-content")
+    );
+    if (!options.length) {
+      console.error("❌ No options rendered after typing.");
+      return;
+    }
+
+    // Rank options using target only; parent used for tie-break
+    let ranked = options
+      .map((el) => ({ el, text: el.textContent || "" }))
+      .map((o) => ({
+        ...o,
+        score: scoreOption(o.text, targetLabel, parentZoneName),
+      }))
+      .sort((a, b) => b.score - a.score);
+
+    // Try exact text pick first (helps when list entry equals the code/label)
+    const exact = ranked.find(
+      (r) => normalize(r.text) === normalize(String(targetLabel))
+    );
+    const best = exact || ranked[0];
+
+    if (best && best.score > 0) {
+      best.el.click();
+      console.log(`✅ Added: ${targetLabel} → "${best.text.trim()}" (score: ${best.score})`);
+      await new Promise((r) => setTimeout(r, 500));
     } else {
-      console.error(`❌ Zone not found after typing: ${zoneCode}`);
+      console.error(`❌ Not found confidently: ${targetLabel}`);
     }
   }
 
-  async function runSelection(zoneCodes) {
-    for (let code of zoneCodes) {
-      await selectZone(code);
-      await new Promise(r => setTimeout(r, 600));
-    }
-    console.log('🎯 Done selecting all zonals!');
+  // ------------------------------------------------------------
+  // 4) RUNNER
+  // ------------------------------------------------------------
+  function getAlreadySelectedTexts() {
+    return Array.from(
+      document.querySelectorAll(
+        "#root .ant-select-selection-item[title], #root .ant-select-selection-item"
+      )
+    )
+      .map((el) => el.getAttribute("title") || el.textContent || "")
+      .map((s) => s.trim())
+      .filter(Boolean);
   }
 
-  const zoneElements = document.querySelectorAll('#root .ant-select-selection-item[title]');
+  async function runSelection(zoneItems, parentZoneName) {
+    const seen = new Set();
+    const deduped = zoneItems.filter((x) => {
+      const key = String(x).trim();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
+    // Optional: skip already selected pills
+    const already = new Set(getAlreadySelectedTexts().map(normalize));
+
+    for (let label of deduped) {
+      if (already.has(normalize(String(label)))) {
+        console.log(`⏭️ Already selected, skipping: ${label}`);
+        continue;
+      }
+      await selectZone(String(label), parentZoneName);
+      await new Promise((r) => setTimeout(r, 600));
+    }
+    console.log("🎯 Done selecting all zonals!");
+  }
+
+  // ------------------------------------------------------------
+  // 5) ENTRY
+  // ------------------------------------------------------------
+  const zoneElements = document.querySelectorAll(
+    "#root .ant-select-selection-item[title]"
+  );
   const zoneElement = zoneElements.length > 1 ? zoneElements[1] : zoneElements[0];
   const zoneName = zoneElement?.getAttribute("title")?.trim();
+
   console.log("👉 Selected Zone:", zoneName);
-  if (!zoneName || !zoneMap[zoneName]) return console.warn("⚠️ Zone not found in map or not selected yet.");
-  await runSelection(zoneMap[zoneName]);
+  if (!zoneName || !zoneMap[zoneName]) {
+    console.warn("⚠️ Zone not found in map or not selected yet.");
+    return;
+  }
+
+  await runSelection(zoneMap[zoneName], zoneName);
 })();
