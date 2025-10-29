@@ -1871,7 +1871,7 @@
   "Siyouh Suburb","Um Fanain","University City Sharjah"
 ]
   };
- function setNativeValue(element, value) {
+  function setNativeValue(element, value) {
     const lastValue = element.value;
     element.value = value;
     const event = new Event("input", { bubbles: true });
@@ -1941,26 +1941,25 @@
     if (o === t) score += 10;
     if (o.startsWith(t)) score += 3;
 
-    // 2) Contains (give token-aware a bigger boost)
+    // 2) Contains (token-aware boost)
     if (o.includes(t)) score += 2;
     if (wholeWordIncludes(rawO, rawT)) score += 4;
 
     // 3) Numeric code friendliness
     if (isNumericTarget) {
-      if (rawO.trim() === rawT) score += 12;                 // exact token = king
-      if (wholeWordIncludes(rawO, rawT)) score += 6;         // exact code as a token
-      // if option has other digits but not our code, small penalty
+      if (rawO.trim() === rawT) score += 12;                 // exact pure code
+      if (wholeWordIncludes(rawO, rawT)) score += 6;         // code appears as token
       if (/\d/.test(rawO) && !wholeWordIncludes(rawO, rawT)) score -= 2;
     }
 
-    // 4) Parent zone as tie-breaker ONLY (we never type it)
+    // 4) Parent zone tie-breaker ONLY, we never actually type parent name
     if (p && o.includes(p)) score += 3;
     if (p && wholeWordIncludes(rawO, rawP)) score += 2;
 
-    // 5) Heuristic penalty for known wrong parent (e.g., Sajaa)
+    // 5) Heuristic penalty for unwanted parent bleed (Sajaa)
     if (p && SAJAA_RE.test(rawO) && !SAJAA_RE.test(rawP)) score -= 5;
 
-    // 6) Slight length sanity: very long labels that barely match get nudged down
+    // 6) Long weird labels that barely match get nudged down
     if (o.length > 60 && !o.startsWith(t)) score -= 1;
 
     return score;
@@ -1970,7 +1969,10 @@
     console.log(`🔎 Searching: "${targetLabel}" (parent tie-break: ${parentZoneName || "-"})`);
 
     const input = document.querySelector("div.ant-select-selection-search input");
-    if (!input) return console.error("❌ Input not found!");
+    if (!input) {
+      console.error("❌ Input not found!");
+      return;
+    }
 
     // Type ONLY the target (code or name)
     await openDropdownIfNeeded(input);
@@ -1985,7 +1987,8 @@
       return;
     }
 
-    // Rank options using target only; parent used for tie-break
+    // Rank options using the target text (the thing we're trying to add)
+    // We use parentZoneName only to break ties.
     let ranked = options
       .map((el) => ({ el, text: el.textContent || "" }))
       .map((o) => ({
@@ -1994,7 +1997,7 @@
       }))
       .sort((a, b) => b.score - a.score);
 
-    // Try exact text pick first (helps when list entry equals the code/label)
+    // Try perfect match first
     const exact = ranked.find(
       (r) => normalize(r.text) === normalize(String(targetLabel))
     );
@@ -2032,17 +2035,26 @@
       return true;
     });
 
-    // Optional: skip already selected pills
-    const already = new Set(getAlreadySelectedTexts().map(normalize));
+    // build set of already selected values,
+    // BUT ignore the parent zone name so it can still be added as a child
+    const alreadySelectedNormalized = getAlreadySelectedTexts()
+      .filter(t => normalize(t) !== normalize(parentZoneName))
+      .map(normalize);
+
+    const already = new Set(alreadySelectedNormalized);
 
     for (let label of deduped) {
-      if (already.has(normalize(String(label)))) {
+      const normLabel = normalize(String(label));
+
+      if (already.has(normLabel)) {
         console.log(`⏭️ Already selected, skipping: ${label}`);
         continue;
       }
+
       await selectZone(String(label), parentZoneName);
       await new Promise((r) => setTimeout(r, 600));
     }
+
     console.log("🎯 Done selecting all zonals!");
   }
 
@@ -2061,6 +2073,5 @@
     return;
   }
 
-  await runSelection(zoneMap[zoneName], zoneName);
+  runSelection(zoneMap[zoneName], zoneName);
 })();
-
