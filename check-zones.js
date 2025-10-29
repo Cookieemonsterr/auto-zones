@@ -1873,14 +1873,6 @@
 };
    // --- normalizer ---
   // removes (24504), removes 'Updated', strips punctuation, lowercases.
-  const normalize = str => {
-    return str
-      .replace(/\(\d+\)/g, '')           // remove "(24504)"
-      .replace(/-?\s*updated\b/gi, '')    // drop " - Updated"
-      .replace(/[^\w\s]/g, '')           // remove punctuation/dashes/etc.
-      .trim()
-      .toLowerCase();
-  };
 const normalize = str => {
   return str
     .replace(/\(\d+\)/g, '')           // remove "(24504)"
