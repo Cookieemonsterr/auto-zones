@@ -1518,229 +1518,358 @@
     "Mezyad": [
     "24299", "24297", "24298", "242300"
     ],
-   "Al Khan": [
-    "Al Houma", "Al Khaledia", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia", "Al Ramtha",
-    "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Halwan", "Hay Al Qasimiah",
-    "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone",
-    "Sharjah Airport", "University City Sharjah"
-  ],
-  "Al Mamzar": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia", "Al Ramtha",
-    "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Halwan", "Hay Al Qasimiah",
-    "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone",
-    "Sharjah Airport", "University City Sharjah"
-  ],
-  "Al Majaz": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia", "Al Ramtha",
-    "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah", "Halwan",
-    "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Al Khaledia": [
-    "Al Houma", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia", "Al Ramtha",
-    "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Halwan", "Hay Al Qasimiah",
-    "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone",
-    "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Bu Shaghara": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Falah Sharjah", "Halwan",
-    "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb",
-    "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Industrial Area": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Qasimiah", "Hay Al Sharq", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Muwaileh Commercial": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Halwan": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial",
-    "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Hay Al Qasimiah": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Al Mussalla": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Quoz Sharjah", "Al Ramaqia", "Al Ramtha",
-    "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah", "Halwan",
-    "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Mughaider Suburb": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Al Quoz Sharjah": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Rahmania Suburb", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Al Ramtha": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Al Ramaqia": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Muwafja": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara",
-    "Falah Sharjah", "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi",
-    "Industrial Area", "Mughaider Suburb", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
+    "Al Khan": [
+  "Al Khan - Updated","Al Houma","Al Khaledia","Al Majaz","Al Mamzar - Updated",
+  "Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+  "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+  "Halwan","Hay Al Qasimiah","Hay Al Sharq","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","University City Sharjah"
+],
+
+"Al Mamzar": [
+  "Al Mamzar - Updated","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+  "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+  "Halwan","Hay Al Qasimiah","Hay Al Sharq","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","University City Sharjah"
+],
+
+"Al Majaz": [
+  "Al Majaz","Al Houma","Al Khaledia","Al Khan - Updated","Al Mamzar - Updated",
+  "Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+  "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+  "Falah Sharjah","Halwan","Hay Al Qasimiah","Hay Al Sharq","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+],
+
+"Al Khaledia": [
+  "Al Khaledia","Al Houma","Al Khan - Updated","Al Majaz","Al Mamzar - Updated",
+  "Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+  "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+  "Halwan","Hay Al Qasimiah","Hay Al Sharq","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+],
+
+"Bu Shaghara": [
+  "Bu Shaghara","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Falah Sharjah","Halwan","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Industrial Area": [
+  "Industrial Area - Updated","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah","Hay Al Sharq",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+],
+
+"Muwaileh Commercial": [
+  "Muwaileh Commercial","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee",
+  "Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+  "Um Fanain","University City Sharjah"
+],
+
+"Halwan": [
+  "Halwan","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah",
+  "Hay Al Sharq","Industrial Area - Updated","Mughaider Suburb","Muwafja",
+  "Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+  "Um Fanain","University City Sharjah"
+],
+
+"Hay Al Qasimiah": [
+  "Hay Al Qasimiah","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Sharq","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+],
+
+"Al Mussalla": [
+  "Al Mussalla","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb",
+  "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+  "Falah Sharjah","Halwan","Hay Al Qasimiah","Hay Al Sharq","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","Um Fanain","University City Sharjah"
+],
+
+"Mughaider Suburb": [
+  "Mughaider Suburb","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah",
+  "Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area - Updated","Muwafja",
+  "Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+  "Um Fanain","University City Sharjah"
+],
+
+"Al Quoz Sharjah": [
+  "Al Quoz Sharjah","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Rahmania Suburb","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah",
+  "Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area - Updated","Mughaider Suburb",
+  "Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+  "Sharjah Airport","Um Fanain","University City Sharjah"
+],
+
+"Al Ramtha": [
+  "Al Ramtha","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash",
+  "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Al Ramaqia": [
+  "Al Ramaqia","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash",
+  "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Muwafja": [
+  "Muwafja","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat",
+  "Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
   ],
   "Al Yash": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Al Swaihat": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja",
-    "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Hay Al Sharq": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Qasimiah", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Rolla": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Alheera Suburb": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Bu Shaghara", "Falah Sharjah", "Halwan",
-    "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla",
-    "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Al Riqa Suburb": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah", "Halwan",
-    "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial",
-    "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain", "University City Sharjah"
-  ],
-  "Saif Zone": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara",
-    "Falah Sharjah", "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi",
-    "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "University City Sharjah": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain"
-  ],
-  "Muwaileh Suburb": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara",
-    "Falah Sharjah", "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi",
-    "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Rolla", "Saif Zone", "Sharjah Airport", "Siyouh Suburb",
-    "Um Fanain", "University City Sharjah"
-  ],
-  "Hay Hoshi": [
-    "Al Houma", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia", "Al Ramtha", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb", "Al Swaihat",
-    "Al Yash", "Falah Sharjah", "Hay Al Atain", "Hay Al Badee", "Hay Barashi", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial",
-    "Muwaileh Suburb", "Saif Zone", "Sharjah Airport", "Siyouh Suburb", "Um Fanain", "University City Sharjah"
-  ],
-  "Hay Al Badee": [
-    "Al Houma", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb",
-    "Al Swaihat", "Al Yash", "Bu Shaghara", "Falah Sharjah", "Halwan", "Hay Al Atain", "Hay Barashi", "Hay Hoshi",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Saif Zone", "Sharjah Airport", "Siyouh Suburb", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Hay Barashi": [
-    "Al Houma", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia", "Al Ramtha", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb", "Al Sajaa",
-    "Al Swaihat", "Al Yash", "Falah Sharjah", "Hay Al Atain", "Hay Al Badee", "Hay Hoshi", "Mughaider Suburb", "Muwafja",
-    "Muwaileh Commercial", "Muwaileh Suburb", "Saif Zone", "Sharjah Airport", "Siyouh Suburb", "Um Fanain", "University City Sharjah"
-  ],
-  "Hay Al Atain": [
-    "Al Houma", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb",
-    "Al Sajaa", "Al Swaihat", "Al Yash", "Falah Sharjah", "Halwan", "Hay Al Badee", "Hay Barashi", "Hay Hoshi",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Saif Zone", "Sharjah Airport", "Siyouh Suburb", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Falah Sharjah": [
-    "Al Houma", "Al Majaz", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb",
-    "Al Ruqa Al Hamra", "Al Ruwaidat Suburb", "Al Sajaa", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Halwan",
-    "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area", "Mughaider Suburb",
-    "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Siyouh Suburb", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Al Rahmania Suburb": [
-    "Al Houma", "Al Quoz Sharjah", "Al Ramaqia", "Al Ramtha", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb", "Al Sajaa", "Al Swaihat",
-    "Al Yash", "Falah Sharjah", "Hay Al Atain", "Hay Al Badee", "Hay Barashi", "Hay Hoshi", "Muwafja", "Muwaileh Suburb",
-    "Saif Zone", "Sharjah Airport", "Siyouh Suburb", "Um Fanain"
+  "Al Yash","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat",
+  "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Al Swaihat": [
+  "Al Swaihat","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Yash",
+  "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Hay Al Sharq": [
+  "Hay Al Sharq","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Rolla": [
+  "Rolla","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Qasimiah","Hay Al Sharq",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Alheera Suburb": [
+  "Alheera Suburb","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash","Bu Shaghara",
+  "Falah Sharjah","Halwan","Hay Al Qasimiah","Hay Al Sharq",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Al Riqa Suburb": [
+  "Al Riqa Suburb","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Ruqa Al Hamra","Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara",
+  "Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah",
+  "Hay Al Sharq","Industrial Area - Updated","Mughaider Suburb","Muwafja",
+  "Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+  "Um Fanain","University City Sharjah"
+],
+
+"Saif Zone": [
+  "Saif Zone","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat",
+  "Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+  "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq",
+  "Hay Barashi","Hay Hoshi","Industrial Area - Updated","Mughaider Suburb",
+  "Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Sharjah Airport",
+  "Um Fanain","University City Sharjah"
+],
+
+"University City Sharjah": [
+  "University City Sharjah","Al Houma","Al Khaledia","Al Khan - Updated",
+  "Al Majaz","Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Ramaqia",
+  "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat","Al Yash",
+  "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain"
+],
+
+"Muwaileh Suburb": [
+  "Muwaileh Suburb","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat",
+  "Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+  "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi",
+  "Hay Hoshi","Industrial Area - Updated","Mughaider Suburb","Muwafja",
+  "Muwaileh Commercial","Rolla","Saif Zone","Sharjah Airport","Siyouh Suburb",
+  "Um Fanain","University City Sharjah"
+],
+
+"Hay Hoshi": [
+  "Hay Hoshi","Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia",
+  "Al Ramtha","Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Swaihat","Al Yash",
+  "Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi","Mughaider Suburb",
+  "Muwafja","Muwaileh Commercial","Muwaileh Suburb","Saif Zone","Sharjah Airport",
+  "Siyouh Suburb","Um Fanain","University City Sharjah"
+],
+
+"Hay Al Badee": [
+  "Hay Al Badee","Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia",
+  "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Ruwaidat Suburb",
+  "Al Swaihat","Al Yash","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Barashi","Hay Hoshi","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Saif Zone","Sharjah Airport","Siyouh Suburb","Um Fanain",
+  "University City Sharjah"
+],
+
+"Hay Barashi": [
+  "Hay Barashi","Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia",
+  "Al Ramtha","Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Sajaa","Al Swaihat",
+  "Al Yash","Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Hoshi",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Saif Zone",
+  "Sharjah Airport","Siyouh Suburb","Um Fanain","University City Sharjah"
+],
+
+"Hay Al Atain": [
+  "Hay Al Atain","Al Houma","Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia",
+  "Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Ruwaidat Suburb",
+  "Al Sajaa","Al Swaihat","Al Yash","Falah Sharjah","Halwan","Hay Al Badee",
+  "Hay Barashi","Hay Hoshi","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Saif Zone","Sharjah Airport","Siyouh Suburb","Um Fanain",
+  "University City Sharjah"
+],
+
+"Falah Sharjah": [
+  "Falah Sharjah","Al Houma","Al Majaz","Al Mussalla","Al Quoz Sharjah",
+  "Al Rahmania Suburb","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
+  "Al Ruwaidat Suburb","Al Sajaa","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Halwan","Hay Al Atain","Hay Al Badee","Hay Al Qasimiah",
+  "Hay Al Sharq","Hay Barashi","Hay Hoshi","Industrial Area - Updated",
+  "Mughaider Suburb","Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla",
+  "Saif Zone","Sharjah Airport","Siyouh Suburb","Um Fanain",
+  "University City Sharjah"
+],
+
+"Al Rahmania Suburb": [
+  "Al Rahmania Suburb","Al Houma","Al Quoz Sharjah","Al Ramaqia","Al Ramtha",
+  "Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Sajaa","Al Swaihat","Al Yash",
+  "Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi","Hay Hoshi",
+  "Muwafja","Muwaileh Suburb","Saif Zone","Sharjah Airport","Siyouh Suburb",
+  "Um Fanain"
   ],
   "Al Sajaa": [
-    "Al Rahmania Suburb", "Al Ruwaidat Suburb", "Falah Sharjah", "Hay Al Atain", "Hay Barashi", "Siyouh Suburb"
-  ],
-  "Siyouh Suburb": [
-    "Al Rahmania Suburb", "Al Ruwaidat Suburb", "Al Sajaa", "Falah Sharjah", "Hay Al Atain", "Hay Al Badee", "Hay Barashi", "Hay Hoshi",
-    "Muwaileh Suburb", "Sharjah Airport"
-  ],
-  "Al Ruwaidat Suburb": [
-    "Al Rahmania Suburb", "Al Sajaa", "Falah Sharjah", "Hay Al Atain", "Hay Al Badee", "Hay Barashi", "Hay Hoshi", "Sharjah Airport",
-    "Siyouh Suburb", "Um Fanain"
-  ],
-  "Al Houma": [
-    "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia",
-    "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Al Ruqa Al Hamra": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "Um Fanain",
-    "University City Sharjah"
-  ],
-  "Um Fanain": [
-    "Al Houma", "Al Khaledia", "Al Majaz", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb", "Al Ramaqia", "Al Ramtha",
-    "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb", "Al Swaihat", "Al Yash", "Alheera Suburb", "Bu Shaghara", "Falah Sharjah",
-    "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi", "Hay Hoshi", "Industrial Area",
-    "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone", "Sharjah Airport", "University City Sharjah"
-  ],
-  "Sharjah Airport": [
-    "Al Houma", "Al Khaledia", "Al Khan", "Al Majaz", "Al Mamzar", "Al Mussalla", "Al Quoz Sharjah", "Al Rahmania Suburb",
-    "Al Ramaqia", "Al Ramtha", "Al Riqa Suburb", "Al Ruqa Al Hamra", "Al Ruwaidat Suburb", "Al Swaihat", "Al Yash", "Alheera Suburb",
-    "Bu Shaghara", "Falah Sharjah", "Halwan", "Hay Al Atain", "Hay Al Badee", "Hay Al Qasimiah", "Hay Al Sharq", "Hay Barashi",
-    "Hay Hoshi", "Industrial Area", "Mughaider Suburb", "Muwafja", "Muwaileh Commercial", "Muwaileh Suburb", "Rolla", "Saif Zone",
-    "Siyouh Suburb", "Um Fanain", "University City Sharjah"
-  ]
+  "Al Sajaa","Al Rahmania Suburb","Al Ruwaidat Suburb","Falah Sharjah",
+  "Hay Al Atain","Hay Barashi","Siyouh Suburb"
+],
+
+"Siyouh Suburb": [
+  "Siyouh Suburb","Al Rahmania Suburb","Al Ruwaidat Suburb","Al Sajaa",
+  "Falah Sharjah","Hay Al Atain","Hay Al Badee","Hay Barashi","Hay Hoshi",
+  "Muwaileh Suburb","Sharjah Airport"
+],
+
+"Al Ruwaidat Suburb": [
+  "Al Ruwaidat Suburb","Al Rahmania Suburb","Al Sajaa","Falah Sharjah",
+  "Hay Al Atain","Hay Al Badee","Hay Barashi","Hay Hoshi","Sharjah Airport",
+  "Siyouh Suburb","Um Fanain"
+],
+
+"Al Houma": [
+  "Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra","Al Swaihat",
+  "Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+  "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi",
+  "Hay Hoshi","Industrial Area - Updated","Mughaider Suburb","Muwafja",
+  "Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport",
+  "Um Fanain","University City Sharjah"
+],
+
+"Al Ruqa Al Hamra": [
+  "Al Ruqa Al Hamra","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Swaihat","Al Yash",
+  "Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain",
+  "Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja","Muwaileh Commercial",
+  "Muwaileh Suburb","Rolla","Saif Zone","Sharjah Airport","Um Fanain",
+  "University City Sharjah"
+],
+
+"Um Fanain": [
+  "Um Fanain","Al Houma","Al Khaledia","Al Majaz","Al Mussalla",
+  "Al Quoz Sharjah","Al Rahmania Suburb","Al Ramaqia","Al Ramtha",
+  "Al Riqa Suburb","Al Ruqa Al Hamra","Al Ruwaidat Suburb","Al Swaihat",
+  "Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah","Halwan",
+  "Hay Al Atain","Hay Al Badee","Hay Al Qasimiah","Hay Al Sharq",
+  "Hay Barashi","Hay Hoshi","Industrial Area - Updated","Mughaider Suburb",
+  "Muwafja","Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+  "Sharjah Airport","University City Sharjah"
+],
+
+"Sharjah Airport": [
+  "Sharjah Airport","Al Houma","Al Khaledia","Al Khan - Updated","Al Majaz",
+  "Al Mamzar - Updated","Al Mussalla","Al Quoz Sharjah","Al Rahmania Suburb",
+  "Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
+  "Al Ruwaidat Suburb","Al Swaihat","Al Yash","Alheera Suburb",
+  "Bu Shaghara","Falah Sharjah","Halwan","Hay Al Atain","Hay Al Badee",
+  "Hay Al Qasimiah","Hay Al Sharq","Hay Barashi","Hay Hoshi",
+  "Industrial Area - Updated","Mughaider Suburb","Muwafja",
+  "Muwaileh Commercial","Muwaileh Suburb","Rolla","Saif Zone",
+  "Siyouh Suburb","Um Fanain","University City Sharjah"
+]
 };
   const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
 
