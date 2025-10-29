@@ -1871,15 +1871,31 @@
   "Siyouh Suburb","Um Fanain","University City Sharjah"
 ]
 };
-  const normalize = str => str.replace(/[^\w\s]/gi, '').trim().toLowerCase();
-
-  // City detection - first element with title attribute
+   // --- normalizer ---
+  // removes (24504), removes 'Updated', strips punctuation, lowercases.
+  const normalize = str => {
+    return str
+      .replace(/\(\d+\)/g, '')           // remove "(24504)"
+      .replace(/-?\s*updated\b/gi, '')    // drop " - Updated"
+      .replace(/[^\w\s]/g, '')           // remove punctuation/dashes/etc.
+      .trim()
+      .toLowerCase();
+  };
+const normalize = str => {
+  return str
+    .replace(/\(\d+\)/g, '')           // remove "(24504)"
+    .replace(/-?\s*updated\b/gi, '')    // drop " - Updated"
+    .replace(/[^\w\s]/g, '')           // remove punctuation/dashes/etc.
+    .trim()
+    .toLowerCase();
+};
+  // --- City detection (first selected pill is city) ---
   const selectionItems = Array.from(document.querySelectorAll('.ant-select-selection-item[title]'));
   const cityElement = selectionItems[0];
   const cityName = cityElement?.getAttribute('title')?.trim().toLowerCase();
 
   const jordanCities = ["amman", "zarqa", "irbid"];
-  const uaeCities = ["dubai", "abu dhabi", "al ain", "sharjah"];
+  const uaeCities    = ["dubai", "abu dhabi", "al ain", "sharjah"];
 
   let region = null;
   if (jordanCities.includes(cityName)) region = "Jordan";
@@ -1891,7 +1907,7 @@
   }
   console.log(`🌍 Region detected: ${region}`);
 
-  // Zone detection - second element with title attribute (usually)
+  // --- Parent zone detection (usually the 2nd pill) ---
   const zoneElement = selectionItems.length > 1 ? selectionItems[1] : selectionItems[0];
   const zoneName = zoneElement?.getAttribute("title")?.trim();
 
@@ -1901,68 +1917,104 @@
     return;
   }
 
+  // --- Build expected lists from zoneMap[zoneName] ---
   const rawExpected = zoneMap[zoneName] || [];
   const expectedNames = [];
   const expectedCodes = [];
 
   for (let val of rawExpected) {
-    if (typeof val === 'string' && /^\d{5}$/.test(val)) {
+    if (/^\d+$/.test(val.trim())) {
+      // purely digits like "24298"
       expectedCodes.push(val.trim());
     } else {
       expectedNames.push(normalize(val));
     }
   }
 
-  // Selected zonals
+  console.log("📋 expectedNames =", expectedNames);
+  console.log("📋 expectedCodes =", expectedCodes);
+
+  // --- Read all currently selected orange tags (child zonals) ---
   const selectedZoneTags = document.querySelectorAll('.ant-select-selection-item-content');
   const selectedNames = [];
   const selectedCodes = [];
 
   Array.from(selectedZoneTags).forEach(el => {
-    const full = el.textContent;
+    const full = el.textContent || "";
 
-    const codeMatch = full.match(/\((\d{5})\)/);
-    if (codeMatch) selectedCodes.push(codeMatch[1]);
+    // 1. pull numeric code in parentheses e.g. "(24504)"
+    const codeMatch = full.match(/\((\d+)\)/);
+    if (codeMatch) {
+      selectedCodes.push(codeMatch[1].trim());
+    }
 
-    const parts = full.split('-');
-    const namePart = parts[parts.length - 1].replace(/\(\d+\)/, '').trim();
-    if (namePart) selectedNames.push(normalize(namePart));
+    // 2. Extract the actual zone text AFTER the city part.
+    //    Example full:
+    //    "[CAREEM_MOT] - ZD - Sharjah - Al Khan - Updated (24504)"
+    //    We want: "Al Khan - Updated"
+    const cityPattern = new RegExp(`\\b${cityName}\\b\\s*-`, 'i');
+    let afterCityPart = null;
+    const citySplit = full.split(cityPattern);
+    if (citySplit.length > 1) {
+      afterCityPart = citySplit[citySplit.length - 1];
+    } else {
+      // fallback: just last "-" section
+      const fallbackParts = full.split('-');
+      afterCityPart = fallbackParts[fallbackParts.length - 1];
+    }
+
+    // clean that text: drop "(24504)", trim
+    let zoneTextClean = afterCityPart
+      .replace(/\(\d+\)/g, '')
+      .trim();
+
+    if (zoneTextClean) {
+      selectedNames.push(normalize(zoneTextClean));
+    }
   });
 
-   // --- Decide comparison mode ---
-  const compareByNames =
-    (region === "Jordan") || (cityName === "sharjah") || (expectedCodes.length === 0);
+  console.log("🟠 selectedNames =", selectedNames);
+  console.log("🟠 selectedCodes =", selectedCodes);
 
-  let missing = [], extra = [];
+  // --- Compare BOTH names and codes ---
 
-  if (compareByNames) {
-    const missingNames = expectedNames.filter(n => !selectedNames.includes(n));
-    const extraNames   = selectedNames.filter(n => !expectedNames.includes(n));
-    missing = missingNames;
-    extra   = extraNames;
+  // Missing = in expected but NOT currently selected
+  const missingNames = expectedNames.filter(n => !selectedNames.includes(n));
+  const missingCodes = expectedCodes.filter(c => !selectedCodes.includes(c));
 
-    console.log("❌ Missing Names:", missingNames);
-    console.log("⚠️ Extra Names:",   extraNames);
-  } else {
-    const missingCodes = expectedCodes.filter(c => !selectedCodes.includes(c));
-    const extraCodes   = selectedCodes.filter(c => !expectedCodes.includes(c));
-    missing = missingCodes;
-    extra   = extraCodes;
+  // Extra = selected but NOT in expected
+  const extraNames   = selectedNames.filter(n => !expectedNames.includes(n));
+  const extraCodes   = selectedCodes.filter(c => !expectedCodes.includes(c));
 
-    console.log("❌ Missing Codes:", missingCodes);
-    console.log("⚠️ Extra Codes:",   extraCodes);
-  }
+  console.log("❌ Missing Names:", missingNames);
+  console.log("❌ Missing Codes:", missingCodes);
+  console.log("⚠️ Extra Names:",   extraNames);
+  console.log("⚠️ Extra Codes:",   extraCodes);
 
-  // Show results
-  if (missing.length === 0 && extra.length === 0) {
+  const anyMissing = missingNames.length || missingCodes.length;
+  const anyExtra   = extraNames.length   || extraCodes.length;
+
+  if (!anyMissing && !anyExtra) {
     alert(`✅ All zones for "${zoneName}" are correctly selected!`);
   } else {
-    if (missing.length > 0) {
-      prompt(`⚠️ Missing zones for "${zoneName}":\n\n(Copy below)`, missing.join(', '));
+    if (anyMissing) {
+      let msg = `⚠️ Missing zones for "${zoneName}":\n\n`;
+      if (missingNames.length) msg += `Names:\n${missingNames.join(', ')}\n\n`;
+      if (missingCodes.length) msg += `Codes:\n${missingCodes.join(', ')}\n\n`;
+      prompt(
+        msg.trim(),
+        (missingNames.concat(missingCodes)).join(', ')
+      );
     }
-    if (extra.length > 0) {
-      prompt(`⚠️ Extra zones that do NOT belong to "${zoneName}":\n\n(Review these)`, extra.join(', '));
+    if (anyExtra) {
+      let msg = `⚠️ Extra zones that do NOT belong to "${zoneName}":\n\n`;
+      if (extraNames.length) msg += `Names:\n${extraNames.join(', ')}\n\n`;
+      if (extraCodes.length) msg += `Codes:\n${extraCodes.join(', ')}\n\n`;
+      prompt(
+        msg.trim(),
+        (extraNames.concat(extraCodes)).join(', ')
+      );
     }
   }
 })();
-//new script
+//new script2
