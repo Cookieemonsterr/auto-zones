@@ -514,7 +514,7 @@
   "24299","24297","24298","242300"
 ],
 "Al Khan": [
-  "Al Khan","Al Houma","Al Khaledia","Al Majaz","Al Mamzar","Al Mussalla",
+  "Al Khan","Al Houma","Al Khaledia","Al Majaz","Al Mamzar","Al alla",
   "Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
   "Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan",
   "Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb",
@@ -523,7 +523,7 @@
 ],
 
 "Al Mamzar": [
-  "Al Mamzar","Al Houma","Al Khaledia","Al Khan","Al Majaz","Al Mussalla",
+  "Al Mamzar","Al Houma","Al Khaledia","Al Khan","Al Majaz","Al alla",
   "Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
   "Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan",
   "Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb",
@@ -532,7 +532,7 @@
 ],
 
 "Al Majaz": [
-  "Al Majaz","Al Houma","Al Khaledia","Al Khan","Al Mamzar","Al Mussalla",
+  "Al Majaz","Al Houma","Al Khaledia","Al Khan","Al Mamzar","Al alla",
   "Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
   "Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Falah Sharjah",
   "Halwan","Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb",
@@ -541,7 +541,7 @@
 ],
 
 "Al Khaledia": [
-  "Al Khaledia","Al Houma","Al Khan","Al Majaz","Al Mamzar","Al Mussalla",
+  "Al Khaledia","Al Houma","Al Khan","Al Majaz","Al Mamzar","Al alla",
   "Al Quoz Sharjah","Al Ramaqia","Al Ramtha","Al Riqa Suburb","Al Ruqa Al Hamra",
   "Al Swaihat","Al Yash","Alheera Suburb","Bu Shaghara","Halwan",
   "Hay Al Qasimiah","Hay Al Sharq","Industrial Area","Mughaider Suburb",
@@ -861,7 +861,7 @@
   "Siyouh Suburb","Um Fanain","University City Sharjah"
 ],
 "Mohammed Bin Zayed City": ["24176","24090","24173","24179","24170","24168","24169","24189","24308","24309","24167","24161","24155","24186"],
-"Mussafah Industrial": ["24176","24090","24173","24179","24167","24308","24309","24189","24186","24168","24170"],
+"Musaffah Industrial": ["24176","24090","24173","24179","24167","24308","24309","24189","24186","24168","24170"],
 "ICAD I": ["24090","24176","24173","24179","24308","24309","24168","24170"],
 "Rabdan": ["24308","24309","24179","24167","24185","24153","24175","24155","24176","24090","24173","24162","24151","24146","24157","24149","24178","24148","24154","24163","24166","24171","24165","24150","24187","24164"],
 "Masdar City": ["24175","24309","24308","24155","24188","24143","24189","24156","24159","24158","24186","24145","24147","24160","24161"],
